@@ -2,12 +2,18 @@
   <div class="elements">
     <h1 class="heading-main">Elements</h1>
     <ul>
-      <li><a href="#color-pallete">Color Palette</a></li>
+      <li><a href="#color-palette">Color Palette</a></li>
+      <li><a href="#fonts">Fonts</a></li>
     </ul>
     <pattern-container patternName="Color Palette">
       <p slot="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, doloribus, saepe! Odit veniam accusantium facere nemo. At qui blanditiis obcaecati delectus quas debitis, ducimus voluptatibus!</p>
       <color-palette slot="pattern"></color-palette>
       <p slot="usage">Colors are a global pattern.</p>
+    </pattern-container>
+    <pattern-container patternName="Fonts">
+      <p slot="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, doloribus, saepe! Odit veniam accusantium facere nemo. At qui blanditiis obcaecati delectus quas debitis, ducimus voluptatibus!</p>
+      <fonts slot="pattern"></fonts>
+      <p slot="usage">Fonts are a global pattern.</p>
     </pattern-container>
   </div>
 </template>
@@ -16,12 +22,14 @@
 // @ is an alias to /src
 import PatternContainer from '@/components/layout/PatternContainer'
 import ColorPalette from '@/components/patterns/00-elements/ColorPalette'
+import Fonts from '@/components/patterns/00-elements/Fonts'
 
 export default {
   name: 'home',
   components: {
     PatternContainer,
-    ColorPalette
+    ColorPalette,
+    Fonts
   }
 }
 </script>

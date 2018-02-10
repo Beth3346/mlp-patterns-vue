@@ -1,7 +1,7 @@
 <template>
   <div class="pattern-container">
     <div class="pattern-header" :id="slug">
-      <h2 class="pattern-heading">Color Palette</h2>
+      <h2 class="pattern-heading">{{patternName}}</h2>
       <slot name="description"></slot>
     </div>
     <slot name="pattern"></slot>
@@ -31,6 +31,12 @@
     border: 1px solid #eee;
     margin: 10px auto;
     padding: 20px;
+  }
+
+  .pattern-header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
   }
 
   .pattern-heading {
