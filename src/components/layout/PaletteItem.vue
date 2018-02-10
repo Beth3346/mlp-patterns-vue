@@ -36,10 +36,11 @@
     color: #fff;
     text-align: center;
     line-height: 80px;
+    font-size: 14px;
   }
 
   .palette-info {
     padding: 10px 0 0;
-    font-size: 16px;
+    font-size: 14px;
   }
 </style>

@@ -21,7 +21,7 @@
 <style scoped>
   .color-palette {
     list-style: none;
-    margin: 0;
+    margin: 0 -10px;
     padding: 0;
     display: flex;
     flex-wrap: wrap;

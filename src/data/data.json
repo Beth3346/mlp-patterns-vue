@@ -1,0 +1,24 @@
+{
+  "colors": [
+    {
+      "name": "$pink",
+      "hex": "#ef0c71"
+    },
+    {
+      "name": "$blue-grey",
+      "hex": "#8b95a1"
+    },
+    {
+      "name": "$dark-blue",
+      "hex": "#27343d"
+    },
+    {
+      "name": "$teal",
+      "hex": "#4ecdc4"
+    },
+    {
+      "name": "$light-teal",
+      "hex": "#b6e8e8"
+    }
+  ]
+}
