@@ -2558,6 +2558,10 @@ domutils@1.5.1:
     dom-serializer "0"
     domelementtype "1"
 
+dropzone@^5.3.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/dropzone/-/dropzone-5.3.0.tgz#41c7a8a7cc6d237e3b28664e7a0719660d067edc"
+
 duplexify@^3.4.2, duplexify@^3.5.3:
   version "3.5.3"
   resolved "https://registry.yarnpkg.com/duplexify/-/duplexify-3.5.3.tgz#8b5818800df92fd0125b27ab896491912858243e"
@@ -2606,6 +2610,16 @@ elliptic@^6.0.0:
     inherits "^2.0.1"
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.0"
+
+elr-sass-utilities@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/elr-sass-utilities/-/elr-sass-utilities-3.3.0.tgz#fda6009b3ba36dfcfcb8905c632c3a72313fb8c9"
+  dependencies:
+    elr-scss-functions "0.0.1"
+
+elr-scss-functions@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/elr-scss-functions/-/elr-scss-functions-0.0.1.tgz#bcfb5439f26479efa28b147bcda58611e81b4b61"
 
 emojis-list@^2.0.0:
   version "2.1.0"

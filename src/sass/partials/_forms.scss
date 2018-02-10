@@ -1,0 +1,191 @@
+// scss-lint:disable ImportantRule QualifyingElement
+// form styles
+.form-holder {
+    background-color: #e0fdfd;
+    border-radius: 5px;
+    max-width: 570px;
+    width: 100%;
+    margin: 10px auto;
+    padding: 30px 40px;
+}
+
+.form-heading {
+    font-size: to-rems(28px);
+    margin: 0;
+    padding: 0 0 20px;
+    color: $text-color;
+    font-weight: 900;
+}
+
+.form-legal {
+    font-size: to-rems(12px);
+    text-align: center;
+    color: $text-color;
+    padding: 10px 0 0;
+    margin: 0;
+}
+
+.tabular-form {
+    padding: 0;
+
+    .elr-row .elr-col-full,
+    .elr-row .elr-col-half,
+    .elr-row .elr-col-third {
+        padding: 5px;
+
+        @include elr-breakpoint($config: (point: 'saturn')) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .elr-row {
+        .elr-col-full {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .elr-col-half:first-child {
+            padding-left: 0;
+        }
+
+        .elr-col-half:last-child {
+            padding-right: 0;
+        }
+
+        .elr-col-third:first-child {
+            padding-left: 0;
+        }
+
+        .elr-col-third:last-child {
+            padding-right: 0;
+        }
+    }
+
+    label,
+    .elr-control-label {
+        font-size: to-rems(14px);
+        font-weight: 500;
+        color: $dark-pink;
+    }
+
+    [type="text"],
+    [type="password"],
+    [type="email"],
+    textarea,
+    [type="date"],
+    select {
+        font-size: to-rems(14px);
+        background-color: $white;
+        border: 1px solid darken($light-teal, 10%);
+        box-shadow: none;
+        background-image: none;
+        width: 100%;
+        border-radius: 5px;
+
+        @include elr-placeholder {
+            color: $grey;
+        }
+
+        &:focus {
+            border-color: $pink;
+        }
+    }
+
+    .has-error {
+        [type="text"],
+        [type="password"],
+        [type="email"],
+        [type="date"],
+        textarea,
+        select {
+            background-color: lighten($danger-color, 20%);
+        }
+    }
+
+    [type="radio"] {
+        margin: 0 10px 0 5px;
+    }
+
+    [type="text"],
+    [type="password"],
+    [type="email"],
+    [type="date"],
+    select {
+        height: 40px;
+    }
+
+    .elr-col-half:first-child {
+        padding-right: 10px;
+    }
+
+    .elr-col-half:last-child {
+        padding-left: 10px;
+    }
+
+    .password-holder {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .form-input-holder {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .show-password {
+        @include elr-centerer(
+            $config: (
+                vertical: true,
+                horizontal: false
+            )
+        );
+        font-size: to-rems(12px);
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        color: $pink;
+        text-decoration: none;
+        border: 0;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .password-message {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: 50px;
+        background-color: $lightest-grey;
+        padding: 5px;
+        border-radius: 3px;
+        border: 1px solid $light-grey;
+    }
+
+    .password-message-danger {
+        color: $danger-color;
+    }
+
+    .password-message-success {
+        color: $success-color;
+    }
+
+    .password-message-warning {
+        color: $warning-color;
+    }
+
+    [type="submit"] {
+        font-size: to-rems(14px);
+        width: 100%;
+    }
+
+    .elr-select-wrapper {
+        &:after {
+            top: 70%;
+        }
+    }
+}
+
+.dropzone { max-width: 90%; }

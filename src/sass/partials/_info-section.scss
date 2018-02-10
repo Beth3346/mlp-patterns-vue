@@ -1,0 +1,80 @@
+.info-section {
+    background-color: $light-teal;
+    padding: 20px 0 40px;
+    min-height: 60vh;
+
+    @include elr-breakpoint($config: (point: 1250px)) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    a {
+        color: $pink;
+        transition: color .3s;
+
+        &:hover {
+            color: lighten($pink, 20%);
+        }
+    }
+
+    .elr-button,
+    .elr-button:hover {
+        color: $white;
+    }
+}
+
+.grouping-details,
+.grouping-ponies,
+.groupings-list {
+    padding: 15px;
+    margin: 0 0 20px;
+    border-bottom: 1px solid $pink;
+}
+
+.info-section-heading,
+.info-section-subheading,
+.info-section-description,
+.info-section-detail {
+    padding: 5px 0;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.info-section-heading {
+    font-size: to-rems(36px);
+    font-weight: $extra-bold;
+}
+
+.info-section-header {
+    padding-bottom: 20px;
+}
+
+.info-section-header > p {
+    max-width: 700px;
+    padding-bottom: 20px;
+}
+
+.info-section-subheading {
+    font-size: to-rems(24px);
+    font-weight: $light;
+}
+
+.info-section-description {
+    font-size: to-rems(14px);
+    font-weight: $light;
+}
+
+.info-section-details {
+    padding: 0;
+}
+
+.info-section-detail {
+    list-style: none;
+    font-weight: $light;
+}
+
+.info-section-detail-label {
+    font-weight: $bold;
+}

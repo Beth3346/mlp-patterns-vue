@@ -1,0 +1,90 @@
+// footer styles
+
+.main-footer {
+    padding: 60px 0;
+    background-color: $dark-blue;
+
+    @include elr-breakpoint($config: (point: 1280px)) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    > .footer-inner {
+        margin: auto;
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.footer-links {
+    @include elr-breakpoint($config: (point: 'saturn')) {
+        width: 50%;
+    }
+
+    @include elr-breakpoint($config: (point: 'neptune')) {
+        width: 100%;
+    }
+}
+
+.footer-links-list-heading {
+    font-size: to-rems(14px);
+    font-weight: 900;
+    color: $white;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu {
+    font-size: to-rems(14px);
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+
+    @include elr-breakpoint($config: (point: 'saturn')) {
+        margin-bottom: 20px;
+    }
+}
+
+.footer-menu-item {
+    padding: 0 0 10px;
+    margin: 0;
+
+    a {
+        color: $light-teal;
+        text-decoration: none;
+        transition: color .3s;
+        font-weight: 700;
+
+        &:hover {
+            text-decoration: none;
+            color: $white;
+        }
+    }
+}
+
+.copyright-section {
+    background-color: $black;
+    padding: 20px 0;
+}
+
+.copyright-statement {
+    font-size: to-rems(12px);
+    text-align: center;
+    color: $white;
+    padding: 0;
+    margin: 0;
+
+    a {
+        color: $pink;
+        text-decoration: none;
+        transition: color .3s;
+
+        &:hover {
+            color: lighten($pink, 20%);
+            text-decoration: none;
+        }
+    }
+}

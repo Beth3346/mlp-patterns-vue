@@ -1,0 +1,51 @@
+.main-nav,
+.main-search {
+    padding: 10px 0;
+    float: right;
+
+    @include elr-breakpoint($config: (point: 1000px)) {
+        float: none;
+    }
+}
+
+.main-menu {
+    padding: 0 10px 0 0;
+    margin: 0;
+    text-align: right;
+
+    @include elr-breakpoint($config: (point: 1000px)) {
+        text-align: center;
+    }
+}
+
+.main-menu-item {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+
+    a,
+    .nav-button {
+        display: block;
+        font-size: to-rems(14px);
+        text-decoration: none;
+        padding: 5px 15px;
+        border-radius: 5px;
+        color: $text-color;
+        transition: color .3s, background-color .3s;
+
+        &:hover {
+            text-decoration: none;
+            background-color: $teal;
+            color: $white;
+        }
+    }
+
+    .active {
+        background-color: $pink;
+        color: $white;
+
+        &:hover {
+            background-color: $teal;
+        }
+    }
+}

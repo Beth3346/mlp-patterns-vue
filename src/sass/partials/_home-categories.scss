@@ -1,0 +1,42 @@
+.browse-categories-section {
+    background: url('../assets/home-category-section-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 150px 50px;
+
+    @include elr-breakpoint($config: (point: 568px)) {
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .inline-list-item {
+            display: block;
+            text-align: center;
+        }
+
+        .inline-list {
+            padding-top: 10px;
+        }
+    }
+
+    .section-heading-large {
+        color: $white;
+
+        @include elr-breakpoint($config: (point: 568px)) {
+            padding-bottom: 10px;
+        }
+    }
+
+    .inline-list-item a {
+        color: $white;
+
+        @include elr-breakpoint($config: (point: 568px)) {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            display: block;
+        }
+    }
+}

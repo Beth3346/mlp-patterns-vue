@@ -1,0 +1,55 @@
+.item-table {
+    @include elr-table-rounded(
+        $config: (
+            hover-bk: $light-teal,
+            border-color: $light-grey,
+            stripes: $lightest-grey
+        )
+    );
+
+    @include elr-breakpoint($config: (point: 900px)) {
+        display: none;
+    }
+
+    .elr-sortable-table-button { background-color: transparent; }
+
+    td,
+    th {
+        padding: 10px 5px;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    th {
+        font-size: to-rems(14px);
+        color: $dark-grey;
+
+        .fa {
+            font-size: to-rems(18px);
+        }
+    }
+
+    td {
+        font-size: to-rems(12px);
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    form {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        background-color: transparent;
+
+        [type="submit"] {
+            font-size: to-rems(12px);
+            margin: 0;
+            padding: 0;
+            border: 0;
+            background-color: transparent;
+        }
+    }
+}

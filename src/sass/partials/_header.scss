@@ -1,0 +1,41 @@
+// Header styles
+
+.main-header-inner {
+    @include elr-clearfix;
+    padding: 20px 0 10px;
+    display: flex;
+    justify-content: space-between;
+
+    @include elr-breakpoint($config: (point: 1250px)) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    @include elr-breakpoint($config: (point: 1000px)) {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    > div {
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.site-logo {
+    font-size: to-rems(24px);
+
+    a {
+        color: $text-color;
+    }
+
+    .elr-uppercase {
+        font-size: to-rems(30px);
+        font-weight: 900;
+        color: $pink;
+    }
+}

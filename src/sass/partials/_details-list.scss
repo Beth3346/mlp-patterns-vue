@@ -1,0 +1,23 @@
+.details-list {
+    font-size: to-rems(14px);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    // styles create/delete forms as links
+    form {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+
+        [type="submit"] {
+            font-size: to-rems(14px);
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    p {
+        font-size: to-rems(14px);
+    }
+}

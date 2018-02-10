@@ -1,0 +1,135 @@
+.collector-stats-section {
+    background-color: $light-teal;
+    padding: 60px 10px 100px;
+
+    @include elr-breakpoint($config: (point: 'neptune')) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .section-heading {
+        @include elr-heading-shortline(
+            $config: (
+                bdr-color: $teal,
+                width: 200px,
+                font-size: 24px
+            )
+        );
+    }
+}
+
+.collector-stat-list-holder {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0 40px;
+
+    @include elr-breakpoint($config: (point: 'neptune')) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+.collector-stat-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 10px 0;
+
+    @include elr-breakpoint($config: (point: 'neptune')) {
+        padding-top: 10px;
+    }
+}
+
+.collector-stat-list-heading {
+    @include elr-heading-shortline(
+        $config: (
+            bdr-color: $pink,
+            width: 80px,
+            font-size: 18px
+        )
+    );
+    font-size: to-rems(24px);
+    color: $pink;
+    font-weight: $extra-bold;
+    text-align: center;
+
+    @include elr-breakpoint($config: (point: 'neptune')) {
+        padding-bottom: 5px;
+    }
+}
+
+.collector-stat-item {
+    font-size: to-rems(18px);
+    display: block;
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-align: center;
+    padding: 10px 20px;
+    width: (100% / 6);
+
+    @include elr-breakpoint($config: (point: 'saturn')) {
+        width: (100% / 2);
+    }
+
+    @include elr-breakpoint($config: (point: 'neptune')) {
+        width: 100%;
+    }
+
+    &::before {
+        @include elr-circle(
+            $config: (
+                diameter: 60px,
+                display: inline-block
+            )
+        );
+        @include elr-font-awesome($config: (font-size: 30px));
+        background-color: $pink;
+        line-height: 60px;
+        content: $plus-icon;
+        color: $white;
+        margin-bottom: 20px;
+    }
+}
+
+.stat-total-collected::before {
+    content: $plus-icon;
+}
+
+.stat-herd-value::before {
+    content: $dollars-icon;
+}
+
+.stat-most-collected::before {
+    content: $check-box-icon;
+}
+
+.stat-priciest::before {
+    content: $money-icon;
+}
+
+.stat-most-wanted::before {
+    content: $gift-icon;
+}
+
+.stat-most-loved::before {
+    content: $heart-icon;
+}
+
+.collector-stat-label {
+    font-size: to-rems(14px);
+    text-transform: uppercase;
+    font-weight: $extra-bold;
+    display: block;
+    color: $dark-blue;
+}
+
+.collector-stat {
+    font-size: to-rems(24px);
+    padding-bottom: 20px;
+    font-weight: $extra-bold;
+    color: $pink;
+
+    @include elr-breakpoint($config: (point: 1000)) {
+        font-size: to-rems(20px);
+    }
+}

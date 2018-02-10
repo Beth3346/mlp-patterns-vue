@@ -1,0 +1,31 @@
+.info-box {
+    background-color: $white;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 40px;
+    padding-top: 20px;
+
+    .details-list-holder {
+        padding-bottom: 30px;
+    }
+
+    .details-list {
+        list-style: none;
+        float: left;
+        padding-right: 20px;
+    }
+
+    .pony-image {
+        margin-bottom: -11px;
+        margin-top: -5px;
+    }
+
+    h2 {
+        font-weight: $bold;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
