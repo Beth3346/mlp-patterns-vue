@@ -20,5 +20,30 @@
       "name": "$light-teal",
       "hex": "#b6e8e8"
     }
-  ]
+  ],
+  "ponies": [
+    {
+      "name": "Blossom"
+    },
+    {
+      "name": "Blue Belle"
+    },
+    {
+      "name": "Butterscotch"
+    },
+    {
+      "name": "Cotton Candy"
+    },
+    {
+      "name": "Minty"
+    },
+    {
+      "name": "Snuzzle"
+    }
+  ],
+  "headings": {
+    "short": "Lorem ipsum dolor sit amet.",
+    "medium": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    "long": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non qui unde, incidunt."
+  }
 }
