@@ -1,45 +1,35 @@
 <template>
-  <div class="palette">
-    <div class="color" :style="`background-color: ${hex}`">
-      <p class="color-code">{{hex}}</p>
-    </div>
-    <p class="palette-info">{{name}}</p>
-  </div>
+  <ul class="color-palette">
+    <li v-for="color in colors">
+      <palette-item :name="color.name" :hex="color.hex"></palette-item>
+    </li>
+  </ul>
 </template>
 
 <script>
+  import PaletteItem from '@/components/layout/PaletteItem'
+
   export default {
     name: 'Palette',
-    props: {
-      name: String,
-      hex: String
+    props: ['colors'],
+    components: {
+      PaletteItem
     }
   }
 </script>
 
 <style scoped>
-  .color {
-    width: 100%;
-    height: 80px;
-    border-radius: 3px;
+  .color-palette {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  .palette {
-    background-color: #fff;
+  .color-palette li {
+    max-width: 25%;
+    min-width: 150px;
     padding: 10px;
-    text-align: center;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-
-  .color-code {
-    color: #fff;
-    text-align: center;
-    line-height: 80px;
-  }
-
-  .palette-info {
-    padding: 10px 0 0;
-    font-size: 16px;
   }
 </style>
