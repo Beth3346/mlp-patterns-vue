@@ -23,27 +23,61 @@
   ],
   "ponies": [
     {
-      "name": "Blossom"
+      "name": "Blossom",
+      "groupingId": 1
     },
     {
-      "name": "Blue Belle"
+      "name": "Blue Belle",
+      "groupingId": 1
     },
     {
-      "name": "Butterscotch"
+      "name": "Butterscotch",
+      "groupingId": 1
     },
     {
-      "name": "Cotton Candy"
+      "name": "Cotton Candy",
+      "groupingId": 1
     },
     {
-      "name": "Minty"
+      "name": "Minty",
+      "groupingId": 1
     },
     {
-      "name": "Snuzzle"
+      "name": "Snuzzle",
+      "groupingId": 1
     }
   ],
   "headings": {
-    "short": "Lorem ipsum dolor sit amet.",
+    "short": "My Little Pony Collection",
     "medium": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
     "long": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non qui unde, incidunt."
-  }
+  },
+  "listitems": [
+    { "name": "Color" },
+    { "name": "Mold" },
+    { "name": "Country" },
+    { "name": "Pose" },
+    { "name": "Year" },
+    { "name": "Babies" },
+    { "name": "Newborns" },
+    { "name": "Males" }
+  ],
+  "tabitems": {
+    "name": "Generation One"
+  },
+  "icons": [
+    { "name": "fa-heart" },
+    { "name": "fa-star" },
+    { "name": "fa-check-circle" },
+    { "name": "fa-heart-o" },
+    { "name": "fa-star-o" },
+    { "name": "fa-check-circle-o" }
+  ],
+  "icons-stats": [
+    { "name": "fa-plus" },
+    { "name": "fa-check-square-o" },
+    { "name": "fa-money" },
+    { "name": "fa-gift" },
+    { "name": "fa-heart" }
+  ]
 }
