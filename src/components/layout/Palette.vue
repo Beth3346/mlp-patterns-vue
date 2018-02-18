@@ -1,7 +1,7 @@
 <template>
   <ul class="color-palette">
     <li v-for="color in colors">
-      <palette-item :name="color.name" :hex="color.hex"></palette-item>
+      <palette-item :key="color.name" :name="color.name" :hex="color.hex"></palette-item>
     </li>
   </ul>
 </template>
@@ -11,7 +11,9 @@
 
   export default {
     name: 'Palette',
-    props: ['colors'],
+    props: {
+      colors: Array
+    },
     components: {
       PaletteItem
     }

@@ -5,6 +5,7 @@
       <li><a href="#color-palette">Color Palette</a></li>
       <li><a href="#fonts">Fonts</a></li>
       <li><a href="#headings">Headings</a></li>
+      <li><a href="#inline-elements">Inline Elements</a></li>
     </ul>
     <pattern-container patternName="Color Palette">
       <p slot="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, doloribus, saepe! Odit veniam accusantium facere nemo. At qui blanditiis obcaecati delectus quas debitis, ducimus voluptatibus!</p>
@@ -24,6 +25,11 @@
       <headings slot="pattern"></headings>
       <div slot="usage"><pre>{{headingEls}}</pre></div>
     </pattern-container>
+    <pattern-container patternName="Inline Elements">
+      <p slot="description">Basic inline elements</p>
+      <inline-elements slot="pattern"></inline-elements>
+      <div slot="usage"><pre>{{inlineEls}}</pre></div>
+    </pattern-container>
   </div>
 </template>
 
@@ -35,6 +41,7 @@ import PatternContainer from '@/components/layout/PatternContainer'
 import ColorPalette from '@/components/patterns/00-elements/ColorPalette'
 import Fonts from '@/components/patterns/00-elements/Fonts'
 import Headings from '@/components/patterns/00-elements/Headings'
+import InlineElements from '@/components/patterns/00-elements/InlineElements'
 
 export default {
   name: 'home',
@@ -47,7 +54,8 @@ export default {
     PatternContainer,
     ColorPalette,
     Fonts,
-    Headings
+    Headings,
+    InlineElements
   },
   computed: {
     headingEls () {
@@ -57,6 +65,15 @@ export default {
 <h4>${this.headings.short}</h4>
 <h5>${this.headings.short}</h5>
 <h6>${this.headings.short}</h6>`
+    },
+    inlineEls () {
+      return `<b>Bold</b><br>
+<strong>Strong</strong><br>
+<i>Italic</i><br>
+<em>Emphasis</em><br>
+<code>Code</code><br>
+<span>Span</span><br>
+<small>Small</small>`
     }
   }
 }

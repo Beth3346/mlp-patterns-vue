@@ -6,9 +6,6 @@
 
 <script>
 export default {
-  name: 'NavMain',
-  props: {
-    msg: String
-  }
+  name: 'NavMain'
 }
 </script>
