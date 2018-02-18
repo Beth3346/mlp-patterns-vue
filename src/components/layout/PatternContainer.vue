@@ -7,7 +7,7 @@
     <slot name="pattern"></slot>
     <div class="pattern-usage">
       <h3 class="pattern-usage-heading">Usage:</h3>
-      <slot name="usage"></slot>
+      <slot name="usage">Add usage here</slot>
     </div>
   </div>
 </template>

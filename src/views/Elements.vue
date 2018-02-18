@@ -7,6 +7,7 @@
       <li><a href="#headings">Headings</a></li>
       <li><a href="#inline-elements">Inline Elements</a></li>
       <li><a href="#list-items">List Items</a></li>
+      <li><a href="#paragraphs">Paragraphs</a></li>
     </ul>
     <pattern-container patternName="Color Palette">
       <p slot="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, doloribus, saepe! Odit veniam accusantium facere nemo. At qui blanditiis obcaecati delectus quas debitis, ducimus voluptatibus!</p>
@@ -36,6 +37,11 @@
       <list-items slot="pattern"></list-items>
       <!-- <div slot="usage"><pre>{{inlineEls}}</pre></div> -->
     </pattern-container>
+    <pattern-container patternName="Paragraphs">
+      <p slot="description">Basic paragraphs</p>
+      <paragraphs slot="pattern"></paragraphs>
+      <!-- <div slot="usage"><pre>{{inlineEls}}</pre></div> -->
+    </pattern-container>
   </div>
 </template>
 
@@ -49,6 +55,7 @@ import Fonts from '@/components/patterns/00-elements/Fonts'
 import Headings from '@/components/patterns/00-elements/Headings'
 import InlineElements from '@/components/patterns/00-elements/InlineElements'
 import ListItems from '@/components/patterns/00-elements/ListItems'
+import Paragraphs from '@/components/patterns/00-elements/Paragraphs'
 
 export default {
   name: 'home',
@@ -63,7 +70,8 @@ export default {
     Fonts,
     Headings,
     InlineElements,
-    ListItems
+    ListItems,
+    Paragraphs
   },
   computed: {
     headingEls () {
