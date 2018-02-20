@@ -1,7 +1,7 @@
 <template>
   <div class="elements">
     <h1 class="heading-main">Elements</h1>
-    <ul>
+    <ul class="elr-inline-list">
       <li><a href="#color-palette">Color Palette</a></li>
       <li><a href="#fonts">Fonts</a></li>
       <li><a href="#headings">Headings</a></li>

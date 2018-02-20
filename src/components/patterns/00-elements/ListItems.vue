@@ -27,8 +27,9 @@
   }
 </script>
 
-<style>
+<style scoped>
   .pattern-heading {
     padding-top: 20px;
+    font-size: 18px;
   }
 </style>

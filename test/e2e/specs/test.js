@@ -1,14 +1,8 @@
-// For authoring Nightwatch tests, see
-// http://nightwatchjs.org/guide#usage
+// https://docs.cypress.io/api/introduction/api.html
 
-module.exports = {
-  'default e2e tests': browser => {
-    browser
-      .url(process.env.VUE_DEV_SERVER_URL)
-      .waitForElementVisible('#app', 5000)
-      .assert.elementPresent('.hello')
-      .assert.containsText('h1', 'Welcome to Your Vue.js App')
-      .assert.elementCount('img', 1)
-      .end()
-  }
-}
+describe('My First Test', () => {
+  it('Visits the Kitchen Sink', () => {
+    cy.visit(Cypress.env('VUE_DEV_SERVER_URL'))
+    cy.contains('h1', 'MyLittlePonyCollection Pattern Library')
+  })
+})

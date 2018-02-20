@@ -7,7 +7,8 @@
     "build": "vue-cli-service build",
     "test": "vue-cli-service test",
     "e2e": "vue-cli-service e2e",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "e2e:open": "vue-cli-service e2e:open"
   },
   "dependencies": {
     "dropzone": "^5.3.0",
@@ -18,7 +19,7 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-alpha.11",
-    "@vue/cli-plugin-e2e-nightwatch": "^3.0.0-alpha.11",
+    "@vue/cli-plugin-e2e-cypress": "^3.0.0-beta.1",
     "@vue/cli-plugin-eslint": "^3.0.0-alpha.11",
     "@vue/cli-plugin-unit-jest": "^3.0.0-alpha.11",
     "@vue/cli-service": "^3.0.0-alpha.11",
@@ -26,7 +27,9 @@
     "@vue/test-utils": "^1.0.0-beta.10",
     "babel-core": "^7.0.0-0",
     "babel-jest": "^22.0.4",
+    "i": "^0.3.6",
     "node-sass": "^4.7.2",
+    "npm": "^5.6.0",
     "sass-loader": "^6.0.6",
     "vue-template-compiler": "^2.5.13"
   },
