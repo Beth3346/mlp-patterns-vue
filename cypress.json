@@ -1,3 +1,6 @@
 {
-  "pluginsFile": "test/e2e/plugins/index.js"
+  "baseUrl": "http://localhost:8080",
+  "pluginsFile": "test/e2e/plugins/index.js",
+  "videoCompression": 5,
+  "projectId": "dbv4o1"
 }

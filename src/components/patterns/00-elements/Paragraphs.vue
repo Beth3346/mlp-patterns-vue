@@ -6,7 +6,7 @@
 </template>
 
 <script>
-  export default {
-    name: 'Paragraphs'
-  }
+export default {
+  name: 'Paragraphs'
+}
 </script>

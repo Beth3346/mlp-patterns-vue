@@ -1,23 +1,23 @@
 <template>
   <ul class="color-palette">
-    <li v-for="color in colors">
-      <palette-item :key="color.name" :name="color.name" :hex="color.hex"></palette-item>
+    <li :key="color.name" v-for="color in colors">
+      <palette-item :name="color.name" :hex="color.hex"></palette-item>
     </li>
   </ul>
 </template>
 
 <script>
-  import PaletteItem from '@/components/layout/PaletteItem'
+import PaletteItem from '@/components/layout/PaletteItem'
 
-  export default {
-    name: 'Palette',
-    props: {
-      colors: Array
-    },
-    components: {
-      PaletteItem
-    }
+export default {
+  name: 'Palette',
+  props: {
+    colors: Array
+  },
+  components: {
+    PaletteItem
   }
+}
 </script>
 
 <style scoped>

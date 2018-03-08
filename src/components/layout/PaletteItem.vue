@@ -8,13 +8,13 @@
 </template>
 
 <script>
-  export default {
-    name: 'PaletteItem',
-    props: {
-      name: String,
-      hex: String
-    }
+export default {
+  name: 'PaletteItem',
+  props: {
+    name: String,
+    hex: String
   }
+}
 </script>
 
 <style scoped>

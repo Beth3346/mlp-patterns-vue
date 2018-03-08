@@ -13,17 +13,17 @@
 </template>
 
 <script>
-  export default {
-    name: 'PatternContainer',
-    props: {
-      patternName: String
-    },
-    computed: {
-      slug () {
-        return this.$options.filters.slugify(this.patternName)
-      }
+export default {
+  name: 'PatternContainer',
+  props: {
+    patternName: String
+  },
+  computed: {
+    slug () {
+      return this.$options.filters.slugify(this.patternName)
     }
   }
+}
 </script>
 
 <style>

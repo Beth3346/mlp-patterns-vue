@@ -2,7 +2,12 @@
 
 describe('My First Test', () => {
   it('Visits the Kitchen Sink', () => {
-    cy.visit(Cypress.env('VUE_DEV_SERVER_URL'))
+    cy.visit('/')
     cy.contains('h1', 'MyLittlePonyCollection Pattern Library')
+    cy.contains('Elements').click()
+    cy.contains('h1', 'Elements')
+    cy.contains('Color Palette').click()
+    cy.contains('Colors are a global pattern')
+    cy.contains('Home').click()
   })
 })

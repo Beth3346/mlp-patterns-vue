@@ -11,7 +11,7 @@
 </template>
 
 <script>
-  export default {
-    name: 'InlineElements'
-  }
+export default {
+  name: 'InlineElements'
+}
 </script>

@@ -10,14 +10,14 @@
 </template>
 
 <script>
-  import { headings } from '@/data/data.json'
+import { headings } from '@/data/data.json'
 
-  export default {
-    name: "Headings",
-    data () {
-      return {
-        headings
-      }
+export default {
+  name: 'Headings',
+  data () {
+    return {
+      headings
     }
   }
+}
 </script>

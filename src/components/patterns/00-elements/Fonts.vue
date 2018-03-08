@@ -8,7 +8,7 @@
 </template>
 
 <script>
-  export default {
-    name: 'Fonts'
-  }
+export default {
+  name: 'Fonts'
+}
 </script>
