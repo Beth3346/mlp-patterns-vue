@@ -58,8 +58,8 @@ import ListItems from '@/components/patterns/00-elements/ListItems'
 import Paragraphs from '@/components/patterns/00-elements/Paragraphs'
 
 export default {
-  name: 'home',
-  data () {
+  name: 'Elements',
+  data() {
     return {
       headings
     }
@@ -74,7 +74,7 @@ export default {
     Paragraphs
   },
   computed: {
-    headingEls () {
+    headingEls() {
       return `<h1>${this.headings.short}</h1>
 <h2>${this.headings.short}</h2>
 <h3>${this.headings.short}</h3>
@@ -82,7 +82,7 @@ export default {
 <h5>${this.headings.short}</h5>
 <h6>${this.headings.short}</h6>`
     },
-    inlineEls () {
+    inlineEls() {
       return `<b>Bold</b><br>
 <strong>Strong</strong><br>
 <i>Italic</i><br>
@@ -96,11 +96,11 @@ export default {
 </script>
 
 <style>
-  .heading-main {
-    font-size: 36px;
-    font-weight: 900;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-  }
+.heading-main {
+  font-size: 36px;
+  font-weight: 900;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
 </style>
