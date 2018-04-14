@@ -2,7 +2,6 @@
 
 exports[`App.vue renders a nav 1`] = `
 <div id="nav">
-    <router-link to="/">Home</router-link> |
     <router-link to="/elements">Elements</router-link> |
     <router-link to="/compounds">Compounds</router-link>
 </div>
@@ -10,6 +9,8 @@ exports[`App.vue renders a nav 1`] = `
 
 exports[`App.vue renders correctly 1`] = `
 <header class="header-main">
-    <h1>MyLittlePonyCollection Pattern Library</h1>
+    <h1>
+        <router-link to="/">MyLittlePonyCollection Pattern Library</router-link>
+    </h1>
 </header>
 `;

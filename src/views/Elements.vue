@@ -35,7 +35,15 @@
     <pattern-container patternName="List Items">
       <p slot="description">Basic HTML lists</p>
       <list-items slot="pattern"></list-items>
-      <!-- <div slot="usage"><pre>{{inlineEls}}</pre></div> -->
+      <div slot="usage">
+        <pre>&lt;ul&gt;<span style="text-indent: 10px; display: block" :key="pony.name" v-for="(pony, index) in ponies">&lt;li&gt;{{pony.name}}&lt;/li&gt;<br v-if="index !== pony.length - 1"></span>&lt;/ul&gt;</pre>
+      </div>
+      <div slot="usage">
+        <pre>&lt;ol&gt;<span style="text-indent: 10px; display: block" :key="pony.name" v-for="(pony, index) in ponies">&lt;li&gt;{{pony.name}}&lt;/li&gt;<br v-if="index !== pony.length - 1"></span>&lt;/ol&gt;</pre>
+      </div>
+      <div slot="usage">
+        <pre>&lt;ul class="elr-inline-list"&gt;<span style="text-indent: 10px; display: block" :key="pony.name" v-for="(pony, index) in ponies">&lt;li&gt;{{pony.name}}&lt;/li&gt;<br v-if="index !== pony.length - 1"></span>&lt;/ul&gt;</pre>
+      </div>
     </pattern-container>
     <pattern-container patternName="Paragraphs">
       <p slot="description">Basic paragraphs</p>
@@ -47,22 +55,23 @@
 
 <script>
 // @ is an alias to /src
-import { headings } from '@/data/data.json'
+import { headings, ponies } from '@/data/data.json';
 
-import PatternContainer from '@/components/layout/PatternContainer'
-import ColorPalette from '@/components/patterns/00-elements/ColorPalette'
-import Fonts from '@/components/patterns/00-elements/Fonts'
-import Headings from '@/components/patterns/00-elements/Headings'
-import InlineElements from '@/components/patterns/00-elements/InlineElements'
-import ListItems from '@/components/patterns/00-elements/ListItems'
-import Paragraphs from '@/components/patterns/00-elements/Paragraphs'
+import PatternContainer from '@/components/layout/PatternContainer';
+import ColorPalette from '@/components/patterns/00-elements/ColorPalette';
+import Fonts from '@/components/patterns/00-elements/Fonts';
+import Headings from '@/components/patterns/00-elements/Headings';
+import InlineElements from '@/components/patterns/00-elements/InlineElements';
+import ListItems from '@/components/patterns/00-elements/ListItems';
+import Paragraphs from '@/components/patterns/00-elements/Paragraphs';
 
 export default {
   name: 'Elements',
   data() {
     return {
-      headings
-    }
+      headings,
+      ponies
+    };
   },
   components: {
     PatternContainer,
@@ -80,7 +89,7 @@ export default {
 <h3>${this.headings.short}</h3>
 <h4>${this.headings.short}</h4>
 <h5>${this.headings.short}</h5>
-<h6>${this.headings.short}</h6>`
+<h6>${this.headings.short}</h6>`;
     },
     inlineEls() {
       return `<b>Bold</b><br>
@@ -89,10 +98,10 @@ export default {
 <em>Emphasis</em><br>
 <code>Code</code><br>
 <span>Span</span><br>
-<small>Small</small>`
+<small>Small</small>`;
     }
   }
-}
+};
 </script>
 
 <style>
