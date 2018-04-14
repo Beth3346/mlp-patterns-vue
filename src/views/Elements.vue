@@ -48,7 +48,8 @@
     <pattern-container patternName="Paragraphs">
       <p slot="description">Basic paragraphs</p>
       <paragraphs slot="pattern"></paragraphs>
-      <!-- <div slot="usage"><pre>{{inlineEls}}</pre></div> -->
+      <div slot="usage"><pre>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error hic quod quaerat corrupti. Sapiente fugit minima, praesentium omnis modi id neque molestiae, quisquam reprehenderit cupiditate!&lt;/p&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore accusamus aperiam consequatur, modi quis perspiciatis nemo hic temporibus dicta laborum unde maiores doloremque quibusdam facilis voluptas, eius laudantium amet in!&lt;/p&gt;</pre></div>
     </pattern-container>
   </div>
 </template>
