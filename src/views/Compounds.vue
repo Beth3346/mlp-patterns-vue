@@ -14,21 +14,21 @@
 
 <script>
 // @ is an alias to /src
-import { headings } from '@/data/data.json'
+import { headings } from '@/data/data.json';
 
-import PatternContainer from '@/components/layout/PatternContainer'
-import ColorPalette from '@/components/patterns/00-elements/ColorPalette'
+import PatternContainer from '@/components/layout/PatternContainer';
+import ColorPalette from '@/components/patterns/00-elements/00-global/ColorPalette';
 
 export default {
   name: 'Compounds',
   data() {
-    return {}
+    return {};
   },
   components: {
     PatternContainer,
     ColorPalette
   }
-}
+};
 </script>
 
 <style>

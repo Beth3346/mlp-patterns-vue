@@ -59,12 +59,12 @@
 import { headings, ponies } from '@/data/data.json';
 
 import PatternContainer from '@/components/layout/PatternContainer';
-import ColorPalette from '@/components/patterns/00-elements/ColorPalette';
-import Fonts from '@/components/patterns/00-elements/Fonts';
-import Headings from '@/components/patterns/00-elements/Headings';
-import InlineElements from '@/components/patterns/00-elements/InlineElements';
-import ListItems from '@/components/patterns/00-elements/ListItems';
-import Paragraphs from '@/components/patterns/00-elements/Paragraphs';
+import ColorPalette from '@/components/patterns/00-elements/00-global/ColorPalette';
+import Fonts from '@/components/patterns/00-elements/00-global/Fonts';
+import Headings from '@/components/patterns/00-elements/01-text/Headings';
+import InlineElements from '@/components/patterns/00-elements/01-text/InlineElements';
+import ListItems from '@/components/patterns/00-elements/01-text/ListItems';
+import Paragraphs from '@/components/patterns/00-elements/01-text/Paragraphs';
 
 export default {
   name: 'Elements',
