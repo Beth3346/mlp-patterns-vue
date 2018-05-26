@@ -42,4 +42,42 @@
     }
   }
 }
+
+.pattern-container {
+  border: 1px solid #eee;
+  margin: 10px auto;
+  padding: 20px;
+}
+
+.pattern-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
+}
+
+.pattern-heading {
+  padding: 0 0 10px;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.pattern-usage {
+  padding: 20px 0 10px;
+}
+
+.pattern-usage p {
+  font-size: 14px;
+}
+
+.pattern-usage p:last-child {
+  padding-bottom: 0;
+}
+
+.pattern-usage-heading {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0 0 10px;
+  margin: 0;
+}
 </style>
