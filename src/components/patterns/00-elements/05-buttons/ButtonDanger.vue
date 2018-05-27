@@ -1,7 +1,5 @@
 <template>
-  <div>
-
-  </div>
+  <button class="elr-button elr-button-danger">Danger</button>
 </template>
 
 <script>

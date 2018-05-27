@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import BackToTop from '@/components/patterns/00-elements/01-text/BackToTop';
+import BackToTop from '@/components/patterns/00-elements/05-buttons/BackToTop';
 
 export default {
   name: 'BackToTopExample',

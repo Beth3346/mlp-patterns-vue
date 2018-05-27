@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import Logo from '@/components/patterns/00-elements/01-text/Logo';
+import Logo from '@/components/patterns/00-elements/06-images/Logo';
 
 export default {
   name: 'LogoExample',

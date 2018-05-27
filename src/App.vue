@@ -43,6 +43,11 @@
   }
 }
 
+.pattern {
+  width: 100%;
+  margin: 20px 0;
+}
+
 .pattern-container {
   border: 1px solid #eee;
   margin: 10px auto;

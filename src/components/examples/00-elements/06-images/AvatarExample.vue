@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import Avatar from '@/components/patterns/00-elements/01-text/Avatar';
+import Avatar from '@/components/patterns/00-elements/06-images/Avatar';
 
 export default {
   name: 'AvatarExample',

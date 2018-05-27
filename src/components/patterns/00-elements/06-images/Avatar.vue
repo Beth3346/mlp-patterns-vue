@@ -1,7 +1,5 @@
 <template>
-  <div>
-
-  </div>
+  <img src="http://placeimg.com/100/100/people" alt="Avatar">
 </template>
 
 <script>

@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import RadioInput from '@/components/patterns/00-elements/01-text/RadioInput';
+import RadioInput from '@/components/patterns/00-elements/04-forms/RadioInput';
 
 export default {
   name: 'RadioInputExample',

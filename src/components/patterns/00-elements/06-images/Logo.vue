@@ -1,7 +1,5 @@
 <template>
-  <div>
-
-  </div>
+  <p class="site-logo"><a href="/"><span class="elr-uppercase">MyLittlePony</span>Collection</a></p>
 </template>
 
 <script>

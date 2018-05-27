@@ -1,7 +1,7 @@
 <template>
   <div class="pattern-container">
     <div class="pattern-header" id="font">
-      <h2 class="pattern-heading">ListItems</h2>
+      <h2 class="pattern-heading">List Items</h2>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias cumque ex ut veniam illo, in ipsam odit omnis eos dolores!</p>
     </div>
     <list-items />

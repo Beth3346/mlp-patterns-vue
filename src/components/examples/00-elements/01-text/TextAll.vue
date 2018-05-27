@@ -1,13 +1,13 @@
 <template>
   <div>
-    <headings />
-    <inline-elements />
-    <list-items />
-    <paragraphs />
-    <section-header />
-    <section-heading />
-    <section-heading-large />
-    <section-subheading />
+    <div class="pattern"><headings /></div>
+    <div class="pattern"><inline-elements /></div>
+    <div class="pattern"><list-items /></div>
+    <div class="pattern"><paragraphs /></div>
+    <div class="pattern"><section-header /></div>
+    <div class="pattern"><section-heading /></div>
+    <div class="pattern"><section-heading-large /></div>
+    <div class="pattern"><section-subheading /></div>
   </div>
 </template>
 

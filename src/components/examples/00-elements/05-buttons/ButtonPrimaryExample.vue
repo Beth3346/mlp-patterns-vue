@@ -1,10 +1,10 @@
 <template>
   <div class="pattern-container">
     <div class="pattern-header">
-      <h2 class="pattern-heading">Button Danger</h2>
+      <h2 class="pattern-heading">Button Primary</h2>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias cumque ex ut veniam illo, in ipsam odit omnis eos dolores!</p>
     </div>
-    <button-danger />
+    <button-primary />
     <div class="pattern-usage">
       <h3 class="pattern-usage-heading">Usage:</h3>
       <p>Fonts are a global pattern.</p>
@@ -13,12 +13,12 @@
 </template>
 
 <script>
-import ButtonDanger from '@/components/patterns/00-elements/01-text/ButtonDanger';
+import ButtonPrimary from '@/components/patterns/00-elements/05-buttons/ButtonPrimary';
 
 export default {
-  name: 'ButtonDangerExample',
+  name: 'ButtonPrimaryExample',
   components: {
-    ButtonDanger
+    ButtonPrimary
   }
 };
 </script>

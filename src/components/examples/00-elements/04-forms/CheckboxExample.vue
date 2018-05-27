@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import Checkbox from '@/components/patterns/00-elements/01-text/Checkbox';
+import Checkbox from '@/components/patterns/00-elements/04-forms/Checkbox';
 
 export default {
   name: 'CheckboxExample',

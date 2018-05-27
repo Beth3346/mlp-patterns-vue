@@ -1,7 +1,7 @@
 <template>
   <div class="pattern-container">
     <div class="pattern-header" id="font">
-      <h2 class="pattern-heading">InlineElements</h2>
+      <h2 class="pattern-heading">Inline Elements</h2>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias cumque ex ut veniam illo, in ipsam odit omnis eos dolores!</p>
     </div>
     <inline-elements />

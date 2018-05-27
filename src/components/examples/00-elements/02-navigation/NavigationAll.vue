@@ -1,10 +1,10 @@
 <template>
   <div>
-    <inline-link />
-    <link-element />
-    <menu-item />
-    <pagination />
-    <tab-navigation />
+    <div class="pattern"><inline-link /></div>
+    <div class="pattern"><link-element /></div>
+    <div class="pattern"><menu-item /></div>
+    <div class="pattern"><pagination /></div>
+    <div class="pattern"><tab-navigation /></div>
   </div>
 </template>
 

@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import Search from '@/components/patterns/00-elements/01-text/Search';
+import Search from '@/components/patterns/00-elements/04-forms/Search';
 
 export default {
   name: 'SearchExample',

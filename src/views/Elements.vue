@@ -2,6 +2,7 @@
   <div class="elements">
     <h1 class="heading-main">Elements</h1>
     <ul class="elr-inline-list">
+      <li><router-link to="/elements">All</router-link></li>
       <li><router-link to="/elements/global">Global</router-link></li>
       <li><router-link to="/elements/text">Text</router-link></li>
       <li><router-link to="/elements/navigation">Navigation</router-link></li>

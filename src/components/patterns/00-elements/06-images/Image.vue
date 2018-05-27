@@ -1,7 +1,5 @@
 <template>
-  <div>
-
-  </div>
+  <img src="http://placeimg.com/400/300/tech" alt="Rectangle">
 </template>
 
 <script>

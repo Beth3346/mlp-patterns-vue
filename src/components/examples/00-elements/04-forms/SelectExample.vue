@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import SelectInput from '@/components/patterns/00-elements/01-text/Select';
+import SelectInput from '@/components/patterns/00-elements/04-forms/Select';
 
 export default {
   name: 'SelectExample',

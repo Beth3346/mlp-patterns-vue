@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import TextAreaInput from '@/components/patterns/00-elements/01-text/TextArea';
+import TextAreaInput from '@/components/patterns/00-elements/04-forms/TextArea';
 
 export default {
   name: 'TextAreaExample',

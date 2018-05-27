@@ -7,13 +7,13 @@
     <icon />
     <div class="pattern-usage">
       <h3 class="pattern-usage-heading">Usage:</h3>
-      <p>Fonts are a global pattern.</p>
+      <p>Icons are a global pattern.</p>
     </div>
   </div>
 </template>
 
 <script>
-import Icon from '@/components/patterns/00-elements/01-text/Icon';
+import Icon from '@/components/patterns/00-elements/03-icons/Icon';
 
 export default {
   name: 'IconExample',

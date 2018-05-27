@@ -1,7 +1,7 @@
 <template>
   <div>
-    <color-palette />
-    <fonts />
+    <div class="pattern"><color-palette /></div>
+    <div class="pattern"><fonts /></div>
   </div>
 </template>
 

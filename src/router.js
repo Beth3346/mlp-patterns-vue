@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import Home from './views/Home';
 import Elements from './views/Elements';
 
+import ElementsAll from '@/components/examples/00-elements/ElementsAll';
 import ElementsGlobal from '@/components/examples/00-elements/00-global/ElementsGlobal';
 import GlobalAll from '@/components/examples/00-elements/00-global/GlobalAll';
 import ColorPaletteExample from '@/components/examples/00-elements/00-global/ColorPaletteExample';
@@ -28,12 +29,30 @@ import PaginationExample from '@/components/examples/00-elements/02-navigation/P
 import TabNavigationExample from '@/components/examples/00-elements/02-navigation/TabNavigationExample';
 
 import ElementsIcon from '@/components/examples/00-elements/03-icons/ElementsIcon';
+import IconAll from '@/components/examples/00-elements/03-icons/IconAll';
+import IconExample from '@/components/examples/00-elements/03-icons/IconExample';
 
 import ElementsForms from '@/components/examples/00-elements/04-forms/ElementsForms';
+import FormsAll from '@/components/examples/00-elements/04-forms/FormsAll';
+import CheckboxExample from '@/components/examples/00-elements/04-forms/CheckboxExample';
+import InputsExample from '@/components/examples/00-elements/04-forms/InputsExample';
+import RadioInputExample from '@/components/examples/00-elements/04-forms/RadioInputExample';
+import SearchExample from '@/components/examples/00-elements/04-forms/SearchExample';
+import SelectExample from '@/components/examples/00-elements/04-forms/SelectExample';
+import TextAreaExample from '@/components/examples/00-elements/04-forms/TextAreaExample';
 
 import ElementsButtons from '@/components/examples/00-elements/05-buttons/ElementsButtons';
+import ButtonsAll from '@/components/examples/00-elements/05-buttons/ButtonsAll';
+import BackToTopExample from '@/components/examples/00-elements/05-buttons/BackToTopExample';
+import ButtonPrimaryExample from '@/components/examples/00-elements/05-buttons/ButtonPrimaryExample';
+import ButtonDangerExample from '@/components/examples/00-elements/05-buttons/ButtonDangerExample';
+import ButtonSuccessExample from '@/components/examples/00-elements/05-buttons/ButtonSuccessExample';
 
 import ElementsImages from '@/components/examples/00-elements/06-images/ElementsImages';
+import ImagesAll from '@/components/examples/00-elements/06-images/ImagesAll';
+import AvatarExample from '@/components/examples/00-elements/06-images/AvatarExample';
+import ImageExample from '@/components/examples/00-elements/06-images/ImageExample';
+import LogoExample from '@/components/examples/00-elements/06-images/LogoExample';
 
 import Compounds from './views/Compounds';
 
@@ -51,6 +70,10 @@ export default new Router({
       path: '/elements',
       component: Elements,
       children: [
+        {
+          path: '/',
+          component: ElementsAll
+        },
         {
           path: 'global',
           component: ElementsGlobal,
@@ -143,19 +166,99 @@ export default new Router({
         },
         {
           path: 'icons',
-          component: ElementsIcon
+          component: ElementsIcon,
+          children: [
+            {
+              path: '/',
+              component: IconAll
+            },
+            {
+              path: 'icons',
+              component: IconExample
+            }
+          ]
         },
         {
           path: 'forms',
-          component: ElementsForms
+          component: ElementsForms,
+          children: [
+            {
+              path: '/',
+              component: FormsAll
+            },
+            {
+              path: 'checkbox',
+              component: CheckboxExample
+            },
+            {
+              path: 'inputs',
+              component: InputsExample
+            },
+            {
+              path: 'radio',
+              component: RadioInputExample
+            },
+            {
+              path: 'search',
+              component: SearchExample
+            },
+            {
+              path: 'select',
+              component: SelectExample
+            },
+            {
+              path: 'text-area',
+              component: TextAreaExample
+            }
+          ]
         },
         {
           path: 'buttons',
-          component: ElementsButtons
+          component: ElementsButtons,
+          children: [
+            {
+              path: '/',
+              component: ButtonsAll
+            },
+            {
+              path: 'back-to-top',
+              component: BackToTopExample
+            },
+            {
+              path: 'primary',
+              component: ButtonPrimaryExample
+            },
+            {
+              path: 'danger',
+              component: ButtonDangerExample
+            },
+            {
+              path: 'success',
+              component: ButtonSuccessExample
+            }
+          ]
         },
         {
           path: 'images',
-          component: ElementsImages
+          component: ElementsImages,
+          children: [
+            {
+              path: '/',
+              component: ImagesAll
+            },
+            {
+              path: 'avatar',
+              component: AvatarExample
+            },
+            {
+              path: 'logo',
+              component: LogoExample
+            },
+            {
+              path: 'image',
+              component: ImageExample
+            }
+          ]
         }
       ]
     },

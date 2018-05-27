@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import Inputs from '@/components/patterns/00-elements/01-text/Inputs';
+import Inputs from '@/components/patterns/00-elements/04-forms/Inputs';
 
 export default {
   name: 'InputsExample',
