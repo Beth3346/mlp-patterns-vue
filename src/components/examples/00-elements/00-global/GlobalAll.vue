@@ -1,19 +1,19 @@
 <template>
   <div>
-    <color-palette-example />
-    <fonts-example />
+    <color-palette />
+    <fonts />
   </div>
 </template>
 
 <script>
-import ColorPaletteExample from '@/components/examples/00-elements/00-global/ColorPaletteExample';
-import FontsExample from '@/components/examples/00-elements/00-global/FontsExample';
+import ColorPalette from '@/components/patterns/00-elements/00-global/ColorPalette';
+import Fonts from '@/components/patterns/00-elements/00-global/Fonts';
 
 export default {
   name: 'GlobalAll',
   components: {
-    ColorPaletteExample,
-    FontsExample
+    ColorPalette,
+    Fonts
   }
 };
 </script>
