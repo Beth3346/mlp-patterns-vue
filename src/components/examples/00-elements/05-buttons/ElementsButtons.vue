@@ -7,6 +7,7 @@
       <li><router-link to="/elements/buttons/primary">Primary</router-link></li>
       <li><router-link to="/elements/buttons/danger">Danger</router-link></li>
       <li><router-link to="/elements/buttons/success">Success</router-link></li>
+      <li><router-link to="/elements/buttons/info">Info</router-link></li>
     </ul>
     <router-view />
   </div>

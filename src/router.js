@@ -13,12 +13,13 @@ import ElementsText from '@/components/examples/00-elements/01-text/ElementsText
 import TextAll from '@/components/examples/00-elements/01-text/TextAll';
 import HeadingsExample from '@/components/examples/00-elements/01-text/HeadingsExample';
 import InlineElementsExample from '@/components/examples/00-elements/01-text/InlineElementsExample';
-import ListItemsExample from '@/components/examples/00-elements/01-text/ListItemsExample';
+import ListItemExample from '@/components/examples/00-elements/01-text/ListItemExample';
 import ParagraphsExample from '@/components/examples/00-elements/01-text/ParagraphsExample';
 import SectionHeaderExample from '@/components/examples/00-elements/01-text/SectionHeaderExample';
 import SectionHeadingExample from '@/components/examples/00-elements/01-text/SectionHeadingExample';
 import SectionHeadingLargeExample from '@/components/examples/00-elements/01-text/SectionHeadingLargeExample';
 import SectionSubheadingExample from '@/components/examples/00-elements/01-text/SectionSubheadingExample';
+import ListHeadingExample from '@/components/examples/00-elements/01-text/ListHeadingExample';
 
 import ElementsNavigation from '@/components/examples/00-elements/02-navigation/ElementsNavigation';
 import NavigationAll from '@/components/examples/00-elements/02-navigation/NavigationAll';
@@ -47,6 +48,7 @@ import BackToTopExample from '@/components/examples/00-elements/05-buttons/BackT
 import ButtonPrimaryExample from '@/components/examples/00-elements/05-buttons/ButtonPrimaryExample';
 import ButtonDangerExample from '@/components/examples/00-elements/05-buttons/ButtonDangerExample';
 import ButtonSuccessExample from '@/components/examples/00-elements/05-buttons/ButtonSuccessExample';
+import ButtonInfoExample from '@/components/examples/00-elements/05-buttons/ButtonInfoExample';
 
 import ElementsImages from '@/components/examples/00-elements/06-images/ElementsImages';
 import ImagesAll from '@/components/examples/00-elements/06-images/ImagesAll';
@@ -55,6 +57,9 @@ import ImageExample from '@/components/examples/00-elements/06-images/ImageExamp
 import LogoExample from '@/components/examples/00-elements/06-images/LogoExample';
 
 import Compounds from './views/Compounds';
+import Components from './views/Components';
+import Sections from './views/Sections';
+import Pages from './views/Pages';
 
 Vue.use(Router);
 
@@ -109,8 +114,8 @@ export default new Router({
               component: InlineElementsExample
             },
             {
-              path: 'list-items',
-              component: ListItemsExample
+              path: 'list-item',
+              component: ListItemExample
             },
             {
               path: 'paragraphs',
@@ -131,6 +136,10 @@ export default new Router({
             {
               path: 'section-subheading',
               component: SectionSubheadingExample
+            },
+            {
+              path: 'list-heading',
+              component: ListHeadingExample
             }
           ]
         },
@@ -235,6 +244,10 @@ export default new Router({
             {
               path: 'success',
               component: ButtonSuccessExample
+            },
+            {
+              path: 'info',
+              component: ButtonInfoExample
             }
           ]
         },
@@ -266,6 +279,21 @@ export default new Router({
       path: '/compounds',
       name: 'compounds',
       component: Compounds
+    },
+    {
+      path: '/components',
+      name: 'components',
+      component: Components
+    },
+    {
+      path: '/sections',
+      name: 'sections',
+      component: Sections
+    },
+    {
+      path: '/pages',
+      name: 'pages',
+      component: Pages
     }
   ]
 });

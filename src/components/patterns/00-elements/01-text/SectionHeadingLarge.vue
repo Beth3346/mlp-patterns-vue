@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <h1 class="section-heading-large">Lorem ipsum dolor sit amet.</h1>
-  </div>
+  <h1 class="section-heading-large">Lorem ipsum dolor sit amet.</h1>
 </template>
 
 <script>

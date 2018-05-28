@@ -5,7 +5,10 @@
     </header>
     <div id="nav">
       <router-link to="/elements">Elements</router-link> |
-      <router-link to="/compounds">Compounds</router-link>
+      <router-link to="/compounds">Compounds</router-link> |
+      <router-link to="/components">Components</router-link> |
+      <router-link to="/sections">Sections</router-link> |
+      <router-link to="/pages">Pages</router-link>
     </div>
     <main class="main-content">
       <router-view/>

@@ -193,3 +193,11 @@
     text-decoration: none;
   }
 }
+
+.status-label {
+  @include elr-label($config: (color: $pink));
+
+  margin-left: 5px;
+  position: relative;
+  top: -5px;
+}

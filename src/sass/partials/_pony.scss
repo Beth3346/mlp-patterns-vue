@@ -5,113 +5,113 @@
 .pony-images-section,
 .pony-info-section,
 .pony-accessories-section {
-    border-bottom: 1px solid $pink;
-    padding: 20px 0;
+  border-bottom: 1px solid $pink;
+  padding: 20px 0;
 }
 
 .pony-details-section {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 
-    .item-stats,
-    .item-actions {
-        justify-content: flex-start;
-        padding-left: 0;
-        margin: 0;
+  .item-stats,
+  .item-actions {
+    justify-content: flex-start;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .item-stat {
+    font-size: to-rems(14px);
+    padding-right: 10px;
+  }
+
+  .item-action {
+    padding-right: 20px;
+
+    p {
+      padding: 0;
+      margin: 0;
     }
 
-    .item-stat {
-        font-size: to-rems(14px);
-        padding-right: 10px;
+    i {
+      font-size: to-rems(18px);
+      color: $pink;
+      padding-right: 5px;
     }
+  }
 
-    .item-action {
-        padding-right: 20px;
-
-        p {
-            padding: 0;
-            margin: 0;
-        }
-
-        i {
-            font-size: to-rems(18px);
-            color: $pink;
-            padding-right: 5px;
-        }
-    }
-
-    .item-action,
-    .item-action form button {
-        display: flex;
-        align-items: baseline;
-
-        &.disabled {
-            cursor: auto;
-        }
-    }
-}
-
-.pony-image-holder {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-left: -10px;
-    margin-right: -10px;
-    padding-bottom: 20px;
-}
-
-.pony-image {
-    height: auto;
-    width: (100% / 3);
-    padding: 10px;
-
-    img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-    }
-}
-
-.pony-add-images {
-    padding-top: 20px;
-    padding-bottom: 20px;
-
-    .dropzone {
-        margin: 20px 0;
-        width: 100%;
-        max-width: none;
-    }
-}
-
-.pony-heading {
+  .item-action,
+  .item-action form button {
     display: flex;
     align-items: baseline;
 
-    .info-section-heading {
-        margin-right: 10px;
+    &.disabled {
+      cursor: auto;
     }
+  }
+}
 
-    .pony-stat-label {
-        color: $pink;
-        font-weight: $bold;
-    }
+.pony-image-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding-bottom: 20px;
+}
+
+.pony-image {
+  height: auto;
+  width: (100% / 3);
+  padding: 10px;
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.pony-add-images {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .dropzone {
+    margin: 20px 0;
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.pony-heading {
+  display: flex;
+  align-items: baseline;
+
+  .info-section-heading {
+    margin-right: 10px;
+  }
+}
+
+.pony-stat-label {
+  color: $pink;
+  font-weight: $bold;
 }
 
 .pony-info-section {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 .pony-details {
-    padding: 20px 0;
-    display: flex;
+  padding: 20px 0;
+  display: flex;
 
-    .details-list {
-        flex-grow: 1;
-        flex-shrink: 1;
-        padding-right: 40px;
-    }
+  .details-list {
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding-right: 40px;
+  }
 }
 
 .pony-variants-section {
-    border-top: 1px solid $pink;
-    margin-top: 40px;
+  border-top: 1px solid $pink;
+  margin-top: 40px;
 }

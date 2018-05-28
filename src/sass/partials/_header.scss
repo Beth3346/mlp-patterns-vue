@@ -1,4 +1,28 @@
 // Header styles
+.main-search {
+  padding: 10px 0;
+  float: right;
+
+  @include elr-breakpoint($config: (point: 1000px)) {
+    float: none;
+  }
+}
+
+.main-search {
+  [type='search'] {
+    font-size: to-rems(14px);
+    border-radius: 20px;
+    border: 2px solid $pink;
+    color: $pink;
+    height: 30px;
+    padding: 5px 10px;
+    transition: border 0.3s;
+
+    &:focus {
+      border: 2px solid $teal;
+    }
+  }
+}
 
 .main-header-inner {
   @include elr-clearfix;

@@ -4,8 +4,9 @@
     <ul class="elr-inline-list">
       <li><router-link to="/elements/text">All</router-link></li>
       <li><router-link to="/elements/text/headings">Headings</router-link></li>
+      <li><router-link to="/elements/text/list-heading">List Heading</router-link></li>
       <li><router-link to="/elements/text/inline-elements">Inline Elements</router-link></li>
-      <li><router-link to="/elements/text/list-items">List Items</router-link></li>
+      <li><router-link to="/elements/text/list-item">List Item</router-link></li>
       <li><router-link to="/elements/text/paragraphs">Paragraphs</router-link></li>
       <li><router-link to="/elements/text/section-header">Section Header</router-link></li>
       <li><router-link to="/elements/text/section-heading">Section Heading</router-link></li>
