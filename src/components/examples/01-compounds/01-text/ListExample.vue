@@ -1,7 +1,7 @@
 <template>
   <div class="pattern-container">
     <div class="pattern-header">
-      <h2 class="pattern-heading">List</h2>
+      <h2 class="pattern-heading">Unordered List</h2>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, laudantium.</p>
     </div>
     <list-element />

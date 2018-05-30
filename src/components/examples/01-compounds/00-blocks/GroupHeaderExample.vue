@@ -1,10 +1,10 @@
 <template>
   <div class="pattern-container">
     <div class="pattern-header">
-      <h2 class="pattern-heading">Category Header</h2>
+      <h2 class="pattern-heading">Group Header</h2>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, laudantium.</p>
     </div>
-    <category-header />
+    <GroupHeader />
     <div class="pattern-usage">
       <h3 class="pattern-usage-heading">Usage:</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, natus?</p>
@@ -13,12 +13,12 @@
 </template>
 
 <script>
-import CategoryHeader from '@/components/patterns/01-compounds/00-blocks/CategoryHeader';
+import GroupHeader from '@/components/patterns/01-compounds/00-blocks/GroupHeader';
 
 export default {
-  name: 'CategoryHeaderExample',
+  name: 'GroupHeaderExample',
   components: {
-    CategoryHeader
+    GroupHeader
   }
 };
 </script>

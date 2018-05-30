@@ -1,14 +1,32 @@
 <template>
   <div>
-    <CardHeader />
-    <CardHeading />
-    <CardStat />
-    <CategoryHeader />
-    <icon-block />
-    <item-detail />
-    <item-header />
-    <info-section-header />
-    <tab-element />
+    <div class="pattern">
+      <CardHeader />
+    </div>
+    <div class="pattern">
+      <CardHeading />
+    </div>
+    <div class="pattern">
+      <CardStat />
+    </div>
+    <div class="pattern">
+      <GroupHeader />
+    </div>
+    <div class="pattern">
+      <IconBlock />
+    </div>
+    <div class="pattern">
+      <ItemDetail />
+    </div>
+    <div class="pattern">
+      <ItemHeader />
+    </div>
+    <div class="pattern">
+      <InfoSectionHeader />
+    </div>
+    <div class="pattern">
+      <TabElement />
+    </div>
   </div>
 </template>
 
@@ -16,7 +34,7 @@
 import CardHeader from '@/components/patterns/01-compounds/00-blocks/CardHeader';
 import CardHeading from '@/components/patterns/01-compounds/00-blocks/CardHeading';
 import CardStat from '@/components/patterns/01-compounds/00-blocks/CardStat';
-import CategoryHeader from '@/components/patterns/01-compounds/00-blocks/CategoryHeader';
+import GroupHeader from '@/components/patterns/01-compounds/00-blocks/GroupHeader';
 import IconBlock from '@/components/patterns/01-compounds/00-blocks/IconBlock';
 import ItemDetail from '@/components/patterns/01-compounds/00-blocks/ItemDetail';
 import ItemHeader from '@/components/patterns/01-compounds/00-blocks/ItemHeader';
@@ -29,7 +47,7 @@ export default {
     CardHeader,
     CardHeading,
     CardStat,
-    CategoryHeader,
+    GroupHeader,
     IconBlock,
     ItemDetail,
     ItemHeader,

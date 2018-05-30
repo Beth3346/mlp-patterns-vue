@@ -1,23 +1,28 @@
 .details-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-detail {
+  font-size: to-rems(14px);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-right: 20px;
+
+  p {
     font-size: to-rems(14px);
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  }
 
-    // styles create/delete forms as links
-    form {
-        display: inline-block;
-        margin: 0;
-        padding: 0;
+  a {
+    color: $dark-pink;
+    text-decoration: none;
+    transition: color 0.3s;
 
-        [type="submit"] {
-            font-size: to-rems(14px);
-            margin: 0;
-            padding: 0;
-        }
+    &:hover {
+      color: lighten($dark-pink, 10%);
     }
-
-    p {
-        font-size: to-rems(14px);
-    }
+  }
 }

@@ -1,6 +1,6 @@
 <template>
-  <div class="elr-card-header" v-if="imagePath">
-    <figure class="elr-card-full-image">
+  <div class="card-header" v-if="imagePath">
+    <figure class="card-full-image">
       <a :href="url(item.name)">
         <img :src="imagePath" :alt="item.name">
       </a>
@@ -13,7 +13,7 @@ export default {
   name: 'CardHeader',
   data() {
     return {
-      imagePath: 'http://placeimg.com/400/300/tech',
+      imagePath: 'http://placeimg.com/1000/300/tech',
       item: {
         name: 'Blossom'
       },

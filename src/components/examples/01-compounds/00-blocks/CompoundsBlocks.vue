@@ -4,12 +4,12 @@
     <ul class="elr-inline-list">
       <li><router-link to="/compounds/blocks">All</router-link></li>
       <li><router-link to="/compounds/blocks/card-header">Card Header</router-link></li>
+      <li><router-link to="/compounds/blocks/card-heading">Card Heading</router-link></li>
       <li><router-link to="/compounds/blocks/card-stat">Card Stat</router-link></li>
-      <li><router-link to="/compounds/blocks/category-header">Category Header</router-link></li>
+      <li><router-link to="/compounds/blocks/group-header">Group Header</router-link></li>
       <li><router-link to="/compounds/blocks/icon-block">Icon Block</router-link></li>
       <li><router-link to="/compounds/blocks/info-section-header">Info Section Header</router-link></li>
       <li><router-link to="/compounds/blocks/item-detail">Item Detail</router-link></li>
-      <li><router-link to="/compounds/blocks/item-header">Item Header</router-link></li>
       <li><router-link to="/compounds/blocks/tab">Tab</router-link></li>
     </ul>
     <router-view />

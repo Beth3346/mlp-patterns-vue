@@ -4,6 +4,7 @@
     <ul class="elr-inline-list">
       <li><router-link to="/compounds">All</router-link></li>
       <li><router-link to="/compounds/blocks">Blocks</router-link></li>
+      <li><router-link to="/compounds/text">Text</router-link></li>
       <li><router-link to="/compounds/navigation">Navigation</router-link></li>
       <li><router-link to="/compounds/media">Media</router-link></li>
       <li><router-link to="/compounds/forms">Forms</router-link></li>

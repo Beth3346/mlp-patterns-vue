@@ -103,12 +103,12 @@
 .pony-details {
   padding: 20px 0;
   display: flex;
+}
 
-  .details-list {
-    flex-grow: 1;
-    flex-shrink: 1;
-    padding-right: 40px;
-  }
+.pony-details-list {
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding-right: 40px;
 }
 
 .pony-variants-section {

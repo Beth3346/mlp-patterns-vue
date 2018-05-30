@@ -1,10 +1,10 @@
 <template>
   <div class="pattern-container">
     <div class="pattern-header">
-      <h2 class="pattern-heading">Section Header</h2>
+      <h2 class="pattern-heading">Info Section Header</h2>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, laudantium.</p>
     </div>
-    <info-section-header />
+    <InfoSectionHeader />
     <div class="pattern-usage">
       <h3 class="pattern-usage-heading">Usage:</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, natus?</p>

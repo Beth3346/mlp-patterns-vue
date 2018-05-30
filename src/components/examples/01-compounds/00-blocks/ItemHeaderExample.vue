@@ -1,7 +1,7 @@
 <template>
   <div class="pattern-container">
     <div class="pattern-header">
-      <h2 class="pattern-heading">Item Header</h2>
+      <h2 class="pattern-heading">Card Item Header</h2>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, laudantium.</p>
     </div>
     <item-header />

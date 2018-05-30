@@ -1,9 +1,9 @@
 <template>
   <div class="card-item-header">
-    <h2 class="elr-card-title">
+    <h2 class="card-title">
       <a :href="url(item.name)">{{item.name}}</a>
     </h2>
-    <h3 v-if="item.description" class="elr-card-subtitle">{{item.description}}</h3>
+    <h3 v-if="item.description" class="card-subtitle">{{item.description}}</h3>
   </div>
 </template>
 

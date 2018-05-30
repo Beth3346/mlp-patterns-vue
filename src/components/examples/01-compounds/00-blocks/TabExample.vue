@@ -4,7 +4,7 @@
       <h2 class="pattern-heading">Tab</h2>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, laudantium.</p>
     </div>
-    <tab-element />
+    <TabElement />
     <div class="pattern-usage">
       <h3 class="pattern-usage-heading">Usage:</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, natus?</p>

@@ -63,11 +63,11 @@ import CompoundsBlocks from '@/components/examples/01-compounds/00-blocks/Compou
 import BlocksAll from '@/components/examples/01-compounds/00-blocks/BlocksAll';
 import CardActionExample from '@/components/examples/01-compounds/00-blocks/CardActionExample';
 import CardHeaderExample from '@/components/examples/01-compounds/00-blocks/CardHeaderExample';
+import CardHeadingExample from '@/components/examples/01-compounds/00-blocks/CardHeadingExample';
 import CardStatExample from '@/components/examples/01-compounds/00-blocks/CardStatExample';
-import CategoryHeaderExample from '@/components/examples/01-compounds/00-blocks/CategoryHeaderExample';
+import GroupHeaderExample from '@/components/examples/01-compounds/00-blocks/GroupHeaderExample';
 import IconBlockExample from '@/components/examples/01-compounds/00-blocks/IconBlockExample';
 import ItemDetailExample from '@/components/examples/01-compounds/00-blocks/ItemDetailExample';
-import ItemHeaderExample from '@/components/examples/01-compounds/00-blocks/ItemHeaderExample';
 import InfoSectionHeaderExample from '@/components/examples/01-compounds/00-blocks/InfoSectionHeaderExample';
 import TabExample from '@/components/examples/01-compounds/00-blocks/TabExample';
 
@@ -349,12 +349,16 @@ export default new Router({
               component: CardHeaderExample
             },
             {
+              path: 'card-heading',
+              component: CardHeadingExample
+            },
+            {
               path: 'card-stat',
               component: CardStatExample
             },
             {
-              path: 'category-header',
-              component: CategoryHeaderExample
+              path: 'group-header',
+              component: GroupHeaderExample
             },
             {
               path: 'icon-block',
@@ -369,12 +373,38 @@ export default new Router({
               component: ItemDetailExample
             },
             {
-              path: 'item-header',
-              component: ItemHeaderExample
-            },
-            {
               path: 'tab',
               component: TabExample
+            }
+          ]
+        },
+        {
+          path: 'text',
+          component: CompoundsText,
+          children: [
+            {
+              path: '/',
+              component: CompoundsTextAll
+            },
+            {
+              path: 'card-details',
+              component: CardDetailsExample
+            },
+            {
+              path: 'copyright',
+              component: CopyrightExample
+            },
+            {
+              path: 'inline-list',
+              component: InlineListExample
+            },
+            {
+              path: 'list',
+              component: ListExample
+            },
+            {
+              path: 'ordered-list',
+              component: OrderedListExample
             }
           ]
         },
