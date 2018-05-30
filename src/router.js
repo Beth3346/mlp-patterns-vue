@@ -27,7 +27,7 @@ import InlineLinkExample from '@/components/examples/00-elements/02-navigation/I
 import LinkExample from '@/components/examples/00-elements/02-navigation/LinkExample';
 import MenuItemExample from '@/components/examples/00-elements/02-navigation/MenuItemExample';
 import PaginationExample from '@/components/examples/00-elements/02-navigation/PaginationExample';
-import TabNavigationExample from '@/components/examples/00-elements/02-navigation/TabNavigationExample';
+import TabButtonExample from '@/components/examples/00-elements/02-navigation/TabNavigationExample';
 
 import ElementsIcon from '@/components/examples/00-elements/03-icons/ElementsIcon';
 import IconAll from '@/components/examples/00-elements/03-icons/IconAll';
@@ -57,6 +57,55 @@ import ImageExample from '@/components/examples/00-elements/06-images/ImageExamp
 import LogoExample from '@/components/examples/00-elements/06-images/LogoExample';
 
 import Compounds from './views/Compounds';
+import CompoundsAll from '@/components/examples/01-compounds/CompoundsAll';
+
+import CompoundsBlocks from '@/components/examples/01-compounds/00-blocks/CompoundsBlocks';
+import BlocksAll from '@/components/examples/01-compounds/00-blocks/BlocksAll';
+import CardActionExample from '@/components/examples/01-compounds/00-blocks/CardActionExample';
+import CardHeaderExample from '@/components/examples/01-compounds/00-blocks/CardHeaderExample';
+import CardStatExample from '@/components/examples/01-compounds/00-blocks/CardStatExample';
+import CategoryHeaderExample from '@/components/examples/01-compounds/00-blocks/CategoryHeaderExample';
+import IconBlockExample from '@/components/examples/01-compounds/00-blocks/IconBlockExample';
+import ItemDetailExample from '@/components/examples/01-compounds/00-blocks/ItemDetailExample';
+import ItemHeaderExample from '@/components/examples/01-compounds/00-blocks/ItemHeaderExample';
+import InfoSectionHeaderExample from '@/components/examples/01-compounds/00-blocks/InfoSectionHeaderExample';
+import TabExample from '@/components/examples/01-compounds/00-blocks/TabExample';
+
+import CompoundsText from '@/components/examples/01-compounds/01-text/CompoundsText';
+import CompoundsTextAll from '@/components/examples/01-compounds/01-text/CompoundsTextAll';
+import CardDetailsExample from '@/components/examples/01-compounds/01-text/CardDetailsExample';
+import CopyrightExample from '@/components/examples/01-compounds/01-text/CopyrightExample';
+import InlineListExample from '@/components/examples/01-compounds/01-text/InlineListExample';
+import ListExample from '@/components/examples/01-compounds/01-text/ListExample';
+import OrderedListExample from '@/components/examples/01-compounds/01-text/OrderedListExample';
+
+import CompoundsNavigation from '@/components/examples/01-compounds/02-navigation/CompoundsNavigation';
+import CompoundsNavigationAll from '@/components/examples/01-compounds/02-navigation/CompoundsNavigationAll';
+import FooterNavigationExample from '@/components/examples/01-compounds/02-navigation/FooterNavigationExample';
+import MainNavigationExample from '@/components/examples/01-compounds/02-navigation/MainNavigationExample';
+import PaginationNavigationExample from '@/components/examples/01-compounds/02-navigation/PaginationNavigationExample';
+import SecondaryNavigationExample from '@/components/examples/01-compounds/02-navigation/SecondaryNavigationExample';
+import TabNavigationExample from '@/components/examples/01-compounds/02-navigation/TabNavigationExample';
+
+import CompoundsMedia from '@/components/examples/01-compounds/03-media/CompoundsMedia';
+import MediaAll from '@/components/examples/01-compounds/03-media/MediaAll';
+import ImageElementExample from '@/components/examples/01-compounds/03-media/ImageElementExample';
+
+import CompoundsForms from '@/components/examples/01-compounds/04-forms/CompoundsForms';
+import CompoundsFormsAll from '@/components/examples/01-compounds/04-forms/CompoundsFormsAll';
+import CheckboxElementExample from '@/components/examples/01-compounds/04-forms/CheckboxElementExample';
+import PasswordInputExample from '@/components/examples/01-compounds/04-forms/PasswordInputExample';
+import RadioElementExample from '@/components/examples/01-compounds/04-forms/RadioElementExample';
+import SearchElementExample from '@/components/examples/01-compounds/04-forms/CheckboxElementExample';
+import SelectElementExample from '@/components/examples/01-compounds/04-forms/SelectElementExample';
+import TextAreaElementExample from '@/components/examples/01-compounds/04-forms/TextAreaElementExample';
+import TextInputExample from '@/components/examples/01-compounds/04-forms/TextInputExample';
+
+import CompoundsButtons from '@/components/examples/01-compounds/05-buttons/CompoundsButtons';
+import CompoundsButtonsAll from '@/components/examples/01-compounds/05-buttons/CompoundsButtonsAll';
+import ButtonGroupExample from '@/components/examples/01-compounds/05-buttons/ButtonGroupExample';
+import PonyActionExample from '@/components/examples/01-compounds/05-buttons/PonyActionExample';
+
 import Components from './views/Components';
 import Sections from './views/Sections';
 import Pages from './views/Pages';
@@ -169,7 +218,7 @@ export default new Router({
             },
             {
               path: 'tab-navigation',
-              component: TabNavigationExample
+              component: TabButtonExample
             }
           ]
         },
@@ -277,22 +326,170 @@ export default new Router({
     },
     {
       path: '/compounds',
-      name: 'compounds',
-      component: Compounds
+      component: Compounds,
+      children: [
+        {
+          path: '/',
+          component: CompoundsAll
+        },
+        {
+          path: 'blocks',
+          component: CompoundsBlocks,
+          children: [
+            {
+              path: '/',
+              component: BlocksAll
+            },
+            {
+              path: 'card-action',
+              component: CardActionExample
+            },
+            {
+              path: 'card-header',
+              component: CardHeaderExample
+            },
+            {
+              path: 'card-stat',
+              component: CardStatExample
+            },
+            {
+              path: 'category-header',
+              component: CategoryHeaderExample
+            },
+            {
+              path: 'icon-block',
+              component: IconBlockExample
+            },
+            {
+              path: 'info-section-header',
+              component: InfoSectionHeaderExample
+            },
+            {
+              path: 'item-detail',
+              component: ItemDetailExample
+            },
+            {
+              path: 'item-header',
+              component: ItemHeaderExample
+            },
+            {
+              path: 'tab',
+              component: TabExample
+            }
+          ]
+        },
+        {
+          path: 'navigation',
+          component: CompoundsNavigation,
+          children: [
+            {
+              path: '/',
+              component: CompoundsNavigationAll
+            },
+            {
+              path: 'footer-navigation',
+              component: FooterNavigationExample
+            },
+            {
+              path: 'main-navigation',
+              component: MainNavigationExample
+            },
+            {
+              path: 'pagination',
+              component: PaginationNavigationExample
+            },
+            {
+              path: 'secondary-navigation',
+              component: SecondaryNavigationExample
+            },
+            {
+              path: 'tab-navigation',
+              component: TabNavigationExample
+            }
+          ]
+        },
+        {
+          path: 'media',
+          component: CompoundsMedia,
+          children: [
+            {
+              path: '/',
+              component: MediaAll
+            },
+            {
+              path: 'image',
+              component: ImageElementExample
+            }
+          ]
+        },
+        {
+          path: 'forms',
+          component: CompoundsForms,
+          children: [
+            {
+              path: '/',
+              component: CompoundsFormsAll
+            },
+            {
+              path: 'checkbox',
+              component: CheckboxElementExample
+            },
+            {
+              path: 'password-input',
+              component: PasswordInputExample
+            },
+            {
+              path: 'radio',
+              component: RadioElementExample
+            },
+            {
+              path: 'search',
+              component: SearchElementExample
+            },
+            {
+              path: 'select',
+              component: SelectElementExample
+            },
+            {
+              path: 'text-area',
+              component: TextAreaElementExample
+            },
+            {
+              path: 'text-input',
+              component: TextInputExample
+            }
+          ]
+        },
+        {
+          path: 'buttons',
+          component: CompoundsButtons,
+          children: [
+            {
+              path: '/',
+              component: CompoundsButtonsAll
+            },
+            {
+              path: 'button-group',
+              component: ButtonGroupExample
+            },
+            {
+              path: 'pony-action',
+              component: PonyActionExample
+            }
+          ]
+        }
+      ]
     },
     {
       path: '/components',
-      name: 'components',
       component: Components
     },
     {
       path: '/sections',
-      name: 'sections',
       component: Sections
     },
     {
       path: '/pages',
-      name: 'pages',
       component: Pages
     }
   ]

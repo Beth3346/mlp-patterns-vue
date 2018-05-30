@@ -15,56 +15,56 @@
   flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 1;
+}
 
-  .elr-card-title {
-    font-size: to-rems(24px);
-    font-weight: $extra-bold;
-    padding-bottom: 0;
+.elr-card-title {
+  font-size: to-rems(24px);
+  font-weight: $extra-bold;
+  padding-bottom: 0;
+  color: $pink;
+
+  a {
     color: $pink;
 
-    a {
-      color: $pink;
-
-      &:hover {
-        color: lighten($pink, 10%);
-      }
+    &:hover {
+      color: lighten($pink, 10%);
     }
   }
+}
 
-  .elr-card-subtitle {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    // border-bottom: 1px solid $light-grey;
-    padding-bottom: 5px;
-  }
+.elr-card-subtitle {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  // border-bottom: 1px solid $light-grey;
+  padding-bottom: 5px;
+}
 
-  .elr-card-list-label {
-    color: $pink;
-  }
+.elr-card-list-label {
+  color: $pink;
+}
 
-  .elr-card-full-image {
-    max-height: 280px;
-    overflow: hidden;
-  }
+.elr-card-full-image {
+  max-height: 280px;
+  overflow: hidden;
+}
 
-  .elr-card-actions .elr-button:only-of-type {
-    margin-left: 0;
-    margin-right: 10px;
-  }
+.elr-card-actions .elr-button:only-of-type {
+  margin-left: 0;
+  margin-right: 10px;
+}
 
-  .elr-card-actions form:only-of-type {
-    margin-left: 10px;
-    margin-right: 0;
-  }
+.elr-card-actions form:only-of-type {
+  margin-left: 10px;
+  margin-right: 0;
+}
 
-  .card-item-header {
-    border-bottom: 1px solid $light-grey;
-    padding-bottom: 10px;
-  }
+.card-item-header {
+  border-bottom: 1px solid $light-grey;
+  padding-bottom: 10px;
+}
 
-  .item-header {
-    display: flex;
-  }
+.item-header {
+  display: flex;
 }
 
 .card-details {

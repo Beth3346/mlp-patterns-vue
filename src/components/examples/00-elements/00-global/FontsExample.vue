@@ -1,6 +1,6 @@
 <template>
   <div class="pattern-container">
-    <div class="pattern-header" id="font">
+    <div class="pattern-header">
       <h2 class="pattern-heading">Fonts</h2>
       <p>MyLittlePonyCollection uses a sans serif font throughout the entire site</p>
       <p>Font weights can vary for headings and important content.</p>
