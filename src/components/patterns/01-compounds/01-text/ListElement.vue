@@ -1,5 +1,11 @@
 <template>
-  
+  <ul>
+    <li>item</li>
+    <li>item</li>
+    <li>item</li>
+    <li>item</li>
+    <li>item</li>
+  </ul>
 </template>
 
 <script>

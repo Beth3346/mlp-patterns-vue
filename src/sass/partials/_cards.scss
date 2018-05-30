@@ -224,8 +224,14 @@
 }
 
 .card-details {
+  @include elr-unstyled-list;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  li {
+    font-size: 14px;
+    padding: 5px 0;
+  }
 }
 
 .card-details-title {
