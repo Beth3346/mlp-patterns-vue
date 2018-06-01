@@ -1,10 +1,11 @@
 <template>
   <div>
-    <blocks-all />
-    <compounds-text-all />
-    <compounds-navigation-all />
-    <compounds-forms-all />
-    <compounds-buttons-all />
+    <BlocksAll />
+    <CompoundsTextAll />
+    <CompoundsNavigationAll />
+    <MediaAll />
+    <CompoundsFormsAll />
+    <CompoundsButtonsAll />
   </div>
 </template>
 
@@ -22,6 +23,7 @@ export default {
     BlocksAll,
     CompoundsTextAll,
     CompoundsNavigationAll,
+    MediaAll,
     CompoundsFormsAll,
     CompoundsButtonsAll
   }
