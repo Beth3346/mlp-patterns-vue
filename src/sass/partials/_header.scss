@@ -1,14 +1,5 @@
 // Header styles
 .main-search {
-  padding: 10px 0;
-  float: right;
-
-  @include elr-breakpoint($config: (point: 1000px)) {
-    float: none;
-  }
-}
-
-.main-search {
   [type='search'] {
     font-size: to-rems(14px);
     border-radius: 20px;
@@ -47,6 +38,25 @@
 
   a {
     text-decoration: none;
+  }
+
+  .main-nav,
+  .main-search {
+    padding: 10px 0;
+    float: right;
+
+    @include elr-breakpoint($config: (point: 1000px)) {
+      float: none;
+    }
+  }
+
+  .main-menu {
+    margin: 0;
+    text-align: right;
+
+    @include elr-breakpoint($config: (point: 1000px)) {
+      text-align: center;
+    }
   }
 }
 

@@ -50,17 +50,18 @@
   "headings": {
     "short": "My Little Pony Collection",
     "medium": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    "long": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non qui unde, incidunt."
+    "long":
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non qui unde, incidunt."
   },
   "listitems": [
-    { "name": "Color" },
-    { "name": "Mold" },
-    { "name": "Country" },
-    { "name": "Pose" },
-    { "name": "Year" },
-    { "name": "Babies" },
-    { "name": "Newborns" },
-    { "name": "Males" }
+    { "name": "Color", "active": false },
+    { "name": "Mold", "active": false },
+    { "name": "Country", "active": false },
+    { "name": "Pose", "active": true },
+    { "name": "Year", "active": false },
+    { "name": "Babies", "active": false },
+    { "name": "Newborns", "active": false },
+    { "name": "Males", "active": false }
   ],
   "tabitems": {
     "name": "Generation One"
@@ -79,5 +80,15 @@
     { "name": "fa-money" },
     { "name": "fa-gift" },
     { "name": "fa-heart" }
-  ]
+  ],
+  "pagination": {
+    "prevUrl": "https://www.mylittleponycollection.com?page=1",
+    "nextUrl": null,
+    "current": 3,
+    "total": 3,
+    "path": "https://www.mylittleponycollection.com",
+    "pageCount": 3,
+    "firstUrl": "https://www.mylittleponycollection.com?page=1",
+    "lastUrl": "https://www.mylittleponycollection.com?page=3"
+  }
 }

@@ -54,18 +54,9 @@
     height: 52px;
     padding: 0 5px;
     margin: 5px 0;
-    // flex-grow: 1;
-    // flex-shrink: 1px;
+    flex-grow: 1;
+    flex-shrink: 1;
     list-style: none;
-    width: (100% / 7);
-
-    @include elr-breakpoint($config: (point: 768px)) {
-      width: (100% / 3);
-    }
-
-    @include elr-breakpoint($config: (point: 568px)) {
-      width: 50%;
-    }
 
     &:first-child {
       padding-left: 0;
@@ -73,6 +64,18 @@
 
     &:last-child {
       padding-right: 0;
+    }
+
+    @include elr-breakpoint($config: (point: 768px)) {
+      width: 50%;
+
+      &:nth-child(odd) {
+        padding-left: 0;
+      }
+
+      &:nth-child(even) {
+        padding-right: 0;
+      }
     }
   }
 }

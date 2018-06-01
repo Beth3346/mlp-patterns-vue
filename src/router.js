@@ -61,7 +61,6 @@ import CompoundsAll from '@/components/examples/01-compounds/CompoundsAll';
 
 import CompoundsBlocks from '@/components/examples/01-compounds/00-blocks/CompoundsBlocks';
 import BlocksAll from '@/components/examples/01-compounds/00-blocks/BlocksAll';
-import CardActionExample from '@/components/examples/01-compounds/00-blocks/CardActionExample';
 import CardHeaderExample from '@/components/examples/01-compounds/00-blocks/CardHeaderExample';
 import CardHeadingExample from '@/components/examples/01-compounds/00-blocks/CardHeadingExample';
 import CardStatExample from '@/components/examples/01-compounds/00-blocks/CardStatExample';
@@ -84,7 +83,6 @@ import CompoundsNavigationAll from '@/components/examples/01-compounds/02-naviga
 import FooterNavigationExample from '@/components/examples/01-compounds/02-navigation/FooterNavigationExample';
 import MainNavigationExample from '@/components/examples/01-compounds/02-navigation/MainNavigationExample';
 import PaginationNavigationExample from '@/components/examples/01-compounds/02-navigation/PaginationNavigationExample';
-import SecondaryNavigationExample from '@/components/examples/01-compounds/02-navigation/SecondaryNavigationExample';
 import TabNavigationExample from '@/components/examples/01-compounds/02-navigation/TabNavigationExample';
 
 import CompoundsMedia from '@/components/examples/01-compounds/03-media/CompoundsMedia';
@@ -341,10 +339,6 @@ export default new Router({
               component: BlocksAll
             },
             {
-              path: 'card-action',
-              component: CardActionExample
-            },
-            {
               path: 'card-header',
               component: CardHeaderExample
             },
@@ -427,10 +421,6 @@ export default new Router({
             {
               path: 'pagination',
               component: PaginationNavigationExample
-            },
-            {
-              path: 'secondary-navigation',
-              component: SecondaryNavigationExample
             },
             {
               path: 'tab-navigation',
