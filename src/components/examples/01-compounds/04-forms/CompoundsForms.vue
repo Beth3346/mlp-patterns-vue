@@ -3,13 +3,13 @@
     <h2 class="heading-main">Forms</h2>
     <ul class="elr-inline-list">
       <li><router-link to="/compounds/forms">All</router-link></li>
-      <li><router-link to="/compounds/forms/checkbox">All</router-link></li>
-      <li><router-link to="/compounds/forms/password">All</router-link></li>
-      <li><router-link to="/compounds/forms/radio">All</router-link></li>
-      <li><router-link to="/compounds/forms/search">All</router-link></li>
-      <li><router-link to="/compounds/forms/select">All</router-link></li>
-      <li><router-link to="/compounds/forms/text-area">All</router-link></li>
-      <li><router-link to="/compounds/forms/text-input">All</router-link></li>
+      <li><router-link to="/compounds/forms/checkbox">Checkbox Element</router-link></li>
+      <li><router-link to="/compounds/forms/password">Password</router-link></li>
+      <li><router-link to="/compounds/forms/radio">Radio Input</router-link></li>
+      <li><router-link to="/compounds/forms/search">Search Input</router-link></li>
+      <li><router-link to="/compounds/forms/select">Select Group</router-link></li>
+      <li><router-link to="/compounds/forms/text-area">Text Area</router-link></li>
+      <li><router-link to="/compounds/forms/text-input">Text Input</router-link></li>
     </ul>
     <router-view />
   </div>
