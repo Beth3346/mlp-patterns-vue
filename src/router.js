@@ -455,7 +455,7 @@ export default new Router({
               component: CheckboxElementExample
             },
             {
-              path: 'password-input',
+              path: 'password',
               component: PasswordInputExample
             },
             {

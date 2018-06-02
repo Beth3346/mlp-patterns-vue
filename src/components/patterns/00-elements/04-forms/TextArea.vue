@@ -1,8 +1,6 @@
 <template>
   <div>
-    <form action="" class="tabular-form">
-      <textarea name="" id="" cols="30" rows="10"></textarea>
-    </form>
+    <textarea name="" id="" cols="30" rows="10">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto, nemo.</textarea>
   </div>
 </template>
 

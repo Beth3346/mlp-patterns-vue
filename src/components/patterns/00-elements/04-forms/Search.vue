@@ -1,8 +1,6 @@
 <template>
   <div>
-    <form class="main-search" action="">
-      <input type="search" placeholder="Search">
-    </form>
+    <input type="search" placeholder="Search">
   </div>
 </template>
 

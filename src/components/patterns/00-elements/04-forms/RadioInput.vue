@@ -1,8 +1,7 @@
 <template>
   <div>
-    <form action="" class="tabular-form">
-      <label for="radio"><input type="radio">Option</label>
-    </form>
+    <label for="radio">Option:</label>
+    <input id="radio" type="radio">
   </div>
 </template>
 

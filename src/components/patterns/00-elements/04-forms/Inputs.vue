@@ -1,8 +1,6 @@
 <template>
   <div>
-    <form action="" class="tabular-form">
-      <input type="text" placeholder="placeholder">
-    </form>
+    <input type="text" placeholder="placeholder">
   </div>
 </template>
 

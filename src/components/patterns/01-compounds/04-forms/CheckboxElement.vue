@@ -1,8 +1,8 @@
 <template>
-  <form class="tabular-form">
-    <label for="checkbox">Checkbox</label>
+  <div>
+    <label for="checkbox">Checkbox:</label>
     <input type="checkbox" id="checkbox">
-  </form>
+  </div>
 </template>
 
 <script>
