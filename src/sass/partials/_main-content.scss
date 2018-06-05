@@ -188,3 +188,7 @@
   position: relative;
   top: -5px;
 }
+
+.button-group {
+  @include elr-button-group;
+}

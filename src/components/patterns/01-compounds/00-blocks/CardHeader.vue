@@ -1,24 +1,32 @@
 <template>
-  <div class="card-header" v-if="imagePath">
+  <div class="card-header" v-if="img">
     <figure class="card-full-image">
       <a :href="url(item.name)">
-        <img :src="imagePath" :alt="item.name">
+        <ImageElement :img="img" />
       </a>
     </figure>
   </div>
 </template>
 
 <script>
+import ImageElement from '@/components/patterns/00-elements/06-images/Image';
+
 export default {
   name: 'CardHeader',
   data() {
     return {
-      imagePath: 'http://placeimg.com/1000/300/tech',
+      img: {
+        src: 'http://placeimg.com/1000/800/tech',
+        alt: 'some tech thing'
+      },
       item: {
         name: 'Blossom'
       },
       model: 'pony'
     };
+  },
+  components: {
+    ImageElement
   },
   methods: {
     slugify(str) {

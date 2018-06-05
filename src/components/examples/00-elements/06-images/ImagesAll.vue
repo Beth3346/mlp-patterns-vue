@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="pattern"><avatar /></div>
-    <div class="pattern"><image-element /></div>
+    <div class="pattern"><ImageElement :img="img" /></div>
     <div class="pattern"><logo /></div>
   </div>
 </template>
@@ -13,6 +13,14 @@ import Logo from '@/components/patterns/00-elements/06-images/Logo';
 
 export default {
   name: 'ImagesAll',
+  data() {
+    return {
+      img: {
+        src: 'http://placeimg.com/1000/800/tech',
+        alt: 'some tech thing'
+      }
+    };
+  },
   components: {
     Avatar,
     ImageElement,

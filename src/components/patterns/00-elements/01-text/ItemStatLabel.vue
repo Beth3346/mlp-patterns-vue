@@ -1,19 +1,15 @@
 <template>
-  <span class="item-stat-label">Collected:</span>
+  <span class="item-stat-label">{{label}}:</span>
 </template>
 
 <script>
 export default {
   name: 'ItemStatLabel',
-  data() {
-    return {};
+  props: {
+    label: {
+      type: String,
+      required: true
+    }
   }
 };
 </script>
-
-<style scoped>
-.pattern-heading {
-  padding-top: 20px;
-  font-size: 18px;
-}
-</style>

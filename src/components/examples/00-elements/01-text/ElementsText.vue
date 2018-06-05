@@ -12,6 +12,9 @@
       <li><router-link to="/elements/text/section-heading">Section Heading</router-link></li>
       <li><router-link to="/elements/text/section-heading-large">Section Heading Large</router-link></li>
       <li><router-link to="/elements/text/section-subheading">Section Subheading</router-link></li>
+      <li><router-link to="/elements/text/stat-label">Stat Label</router-link></li>
+      <li><router-link to="/elements/text/item-stat-label">Item Stat Label</router-link></li>
+      <li><router-link to="/elements/text/status-label">Status Label</router-link></li>
     </ul>
     <router-view />
   </div>

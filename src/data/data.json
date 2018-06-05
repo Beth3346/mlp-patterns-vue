@@ -47,12 +47,6 @@
       "groupingId": 1
     }
   ],
-  "headings": {
-    "short": "My Little Pony Collection",
-    "medium": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    "long":
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non qui unde, incidunt."
-  },
   "listitems": [
     { "name": "Color", "active": false },
     { "name": "Mold", "active": false },
@@ -63,9 +57,44 @@
     { "name": "Newborns", "active": false },
     { "name": "Males", "active": false }
   ],
-  "tabitems": {
-    "name": "Generation One"
-  },
+  "tabitems": [
+    {
+      "name": "Generation 1",
+      "tab": "gen1",
+      "active": false,
+      "subheading": "",
+      "body": "",
+      "target": "",
+      "buttonText": ""
+    },
+    {
+      "name": "Nirvanas",
+      "tab": "nirvanas",
+      "active": true,
+      "subheading": "",
+      "body": "",
+      "target": "",
+      "buttonText": ""
+    },
+    {
+      "name": "Generation 2",
+      "tab": "gen2",
+      "active": false,
+      "subheading": "",
+      "body": "",
+      "target": "",
+      "buttonText": ""
+    },
+    {
+      "name": "Generation 3",
+      "tab": "gen3",
+      "active": false,
+      "subheading": "",
+      "body": "",
+      "target": "",
+      "buttonText": ""
+    }
+  ],
   "icons": [
     { "name": "fa-heart" },
     { "name": "fa-star" },
@@ -90,5 +119,38 @@
     "pageCount": 3,
     "firstUrl": "https://www.mylittleponycollection.com?page=1",
     "lastUrl": "https://www.mylittleponycollection.com?page=3"
+  },
+  "statLabels": [
+    {
+      "id": 1,
+      "label": "Collected"
+    },
+    {
+      "id": 2,
+      "label": "Wishlisted"
+    },
+    {
+      "id": 3,
+      "label": "Favorited"
+    }
+  ],
+  "status": [
+    {
+      "id": 1,
+      "name": "Not Selling"
+    },
+    {
+      "id": 2,
+      "name": "Selling"
+    },
+    {
+      "id": 3,
+      "name": "Sold"
+    }
+  ],
+  "headings": {
+    "short": "My Little Pony Collection",
+    "medium": "Generation One My Little Ponies",
+    "long": "Generation Three My Little Ponies from France"
   }
 }

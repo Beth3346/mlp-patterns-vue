@@ -1,9 +1,15 @@
 <template>
-  <h1 class="section-heading">Lorem ipsum dolor sit amet.</h1>
+  <h1 class="section-heading">{{heading}}</h1>
 </template>
 
 <script>
 export default {
-  name: 'SectionHeading'
+  name: 'SectionHeading',
+  props: {
+    heading: {
+      type: String,
+      required: true
+    }
+  }
 };
 </script>

@@ -1,19 +1,15 @@
 <template>
-  <span class="status-label">Not Selling</span>
+  <span class="status-label">{{status}}</span>
 </template>
 
 <script>
 export default {
   name: 'StatusLabel',
-  data() {
-    return {};
+  props: {
+    status: {
+      type: String,
+      required: true
+    }
   }
 };
 </script>
-
-<style scoped>
-.pattern-heading {
-  padding-top: 20px;
-  font-size: 18px;
-}
-</style>

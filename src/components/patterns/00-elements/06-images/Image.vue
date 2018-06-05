@@ -1,9 +1,15 @@
 <template>
-  <img src="http://placeimg.com/400/300/tech" alt="Rectangle">
+  <img :src="img.src" :alt="img.alt">
 </template>
 
 <script>
 export default {
-  name: 'Image'
+  name: 'ImageElement',
+  props: {
+    img: {
+      type: Object,
+      required: true
+    }
+  }
 };
 </script>

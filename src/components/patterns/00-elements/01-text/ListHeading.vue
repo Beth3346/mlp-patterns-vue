@@ -1,19 +1,15 @@
 <template>
-  <h3 class="card-details-title">Ponies:</h3>
+  <h3 class="card-details-title">{{heading}}:</h3>
 </template>
 
 <script>
 export default {
   name: 'ListHeading',
-  data() {
-    return {};
+  props: {
+    heading: {
+      type: String,
+      required: true
+    }
   }
 };
 </script>
-
-<style scoped>
-.pattern-heading {
-  padding-top: 20px;
-  font-size: 18px;
-}
-</style>

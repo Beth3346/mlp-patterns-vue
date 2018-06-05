@@ -20,6 +20,9 @@ import SectionHeadingExample from '@/components/examples/00-elements/01-text/Sec
 import SectionHeadingLargeExample from '@/components/examples/00-elements/01-text/SectionHeadingLargeExample';
 import SectionSubheadingExample from '@/components/examples/00-elements/01-text/SectionSubheadingExample';
 import ListHeadingExample from '@/components/examples/00-elements/01-text/ListHeadingExample';
+import StatLabelExample from '@/components/examples/00-elements/01-text/StatLabelExample';
+import ItemStatLabelExample from '@/components/examples/00-elements/01-text/ItemStatLabelExample';
+import StatusLabelExample from '@/components/examples/00-elements/01-text/StatusLabelExample';
 
 import ElementsNavigation from '@/components/examples/00-elements/02-navigation/ElementsNavigation';
 import NavigationAll from '@/components/examples/00-elements/02-navigation/NavigationAll';
@@ -187,6 +190,18 @@ export default new Router({
             {
               path: 'list-heading',
               component: ListHeadingExample
+            },
+            {
+              path: 'stat-label',
+              component: StatLabelExample
+            },
+            {
+              path: 'status-label',
+              component: StatusLabelExample
+            },
+            {
+              path: 'item-stat-label',
+              component: ItemStatLabelExample
             }
           ]
         },

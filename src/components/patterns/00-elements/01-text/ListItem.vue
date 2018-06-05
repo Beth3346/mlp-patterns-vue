@@ -1,22 +1,15 @@
 <template>
-  <li>{{ponies[0].name}}</li>
+  <li>{{item.name}}</li>
 </template>
 
 <script>
-import { ponies } from '@/data/data.json';
 export default {
   name: 'ListItem',
-  data() {
-    return {
-      ponies
-    };
+  props: {
+    item: {
+      type: Object,
+      required: true
+    }
   }
 };
 </script>
-
-<style scoped>
-.pattern-heading {
-  padding-top: 20px;
-  font-size: 18px;
-}
-</style>
