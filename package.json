@@ -28,6 +28,7 @@
     "babel-core": "^7.0.0-0",
     "babel-jest": "^22.2.2",
     "cypress": "^2.0.2",
+    "elr-vue-jest-helpers": "^0.0.6",
     "eslint-config-prettier": "^2.9.0",
     "i": "^0.3.6",
     "node-sass": "^4.7.2",
@@ -35,9 +36,5 @@
     "sass-loader": "^6.0.6",
     "vue-template-compiler": "^2.5.13"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ]
+  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"]
 }

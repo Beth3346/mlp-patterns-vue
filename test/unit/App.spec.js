@@ -1,17 +1,23 @@
-import { shallow } from '@vue/test-utils'
-import App from '@/App.vue'
+import { shallow } from '@vue/test-utils';
+import helpers from 'elr-vue-jest-helpers';
+import App from '@/App.vue';
 
-let wrapper
+let wrapper;
+let h;
 
 beforeEach(() => {
-  wrapper = shallow(App)
-})
+  wrapper = shallow(App);
+  h = helpers.init({
+    wrapper,
+    expect
+  });
+});
 
 describe('App.vue', () => {
   it('renders correctly', () => {
-    expect(wrapper.find('.header-main').html()).toMatchSnapshot()
-  })
+    h.matches('.header-main');
+  });
   it('renders a nav', () => {
-    expect(wrapper.find('#nav').html()).toMatchSnapshot()
-  })
-})
+    h.matches('#nav');
+  });
+});
